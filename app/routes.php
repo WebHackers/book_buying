@@ -29,7 +29,9 @@ Route::post('/comment/update', 'comment@update');		//评论提交
 
 //recommend
 
-Route::get('/recommend', 'recommend@index');			//解析目标网站URL
+Route::get('/recommend', 'recommend@index');			//推荐页面
+
+Route::get('/recommend/query', 'recommend@query');		//解析目标网站URL
 
 Route::post('/recommend/commit', 'recommend@commit');	//提交推荐书目
 
