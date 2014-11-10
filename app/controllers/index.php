@@ -4,7 +4,7 @@ class Index extends BaseController {
 
 	public function index()
 	{
-		return 'hello';
+		return View::make('layouts/master');
 	}
 
 }
