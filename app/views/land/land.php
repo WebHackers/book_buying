@@ -3,13 +3,13 @@
 <head>
 	<title>登录</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type = "text/javascript" src = "../bootstrap/js/bootstrap.js"></script> 
-	<script type = "text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script> 
-	<link rel = "stylesheet" type = "text/css" href = "../bootstrap/css/bootstrap.min.css">
-	<link rel = "stylesheet" type = "text/css" href = "../bootstrap/css/bootstrap-responsive.css">
-	<link rel = "stylesheet" type = "text/css" href = "../bootstrap/css/bootstrap.css">
-	<link rel = "stylesheet" type = "text/css" href = "../bootstrap/css/bootstrap-responsive.min.css">
-	<link rel = "stylesheet" type = "text/css" href = "../css/land.css">
+	<script type = "text/javascript" src = "/book_buying/public/bootstrap/js/bootstrap.js"></script> 
+	<script type = "text/javascript" src = "/book_buying/public/bootstrap/js/bootstrap.min.js"></script> 
+	<link rel = "stylesheet" type = "text/css" href = "/book_buying/public/bootstrap/css/bootstrap.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "/book_buying/public/bootstrap/css/bootstrap-responsive.css">
+	<link rel = "stylesheet" type = "text/css" href = "/book_buying/public/bootstrap/css/bootstrap.css">
+	<link rel = "stylesheet" type = "text/css" href = "/book_buying/public/bootstrap/css/bootstrap-responsive.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "/book_buying/public/css/land.css">
 
 </head>
 <body class = "body">
@@ -36,7 +36,7 @@
 			<div class = "title">图书管理系统</div>
 			<div class = "singal">
 				<a href = "http://www.hdu.edu.cn" target = "_blank"><img src= "
-					../img/xh4.gif"></a>
+					/book_buying/public/img/xh4.gif"></a>
 			</div>
 		</div>
 		<div class = "poster">

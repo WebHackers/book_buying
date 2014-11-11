@@ -1,12 +1,8 @@
 <?php
-
-class Index extends BaseController {
-
-	public function index()
-	{
-		return View::make('layouts/master');
+	class index extends Controller {
+		public function index () {
+			return View :: make ('layouts.show_books');  
+		}
 	}
-
-}
 
 ?>
