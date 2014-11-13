@@ -1,51 +1,125 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
+/**
+*|--------------------------------------------------------------------------
+*|	Account
+*|--------------------------------------------------------------------------
+*|
+*| '/login' --- 前端->提交登陆表单
+*|          --- 后端->验证用户，成功则返回首页，否则返回登陆页面
+*|
+*| '/logout' --- 前端->发起URL请求
+*|           --- 后端->删除登陆信息，重定向到登陆页面
+*|
 */
 
-//index
+Route::post('/login', 'account@login');
 
-Route::get('/', 'index@index');							//首页
+Route::post('/logout', 'account@logout');
 
-Route::post('/index/like', 'index@like');				//点赞链接
+/**
+*|--------------------------------------------------------------------------
+*|	Index
+*|--------------------------------------------------------------------------
+*|
+*| '/' --- 首页
+*|
+*| '/like' --- 前端->发起url请求，参数'bookId=**'
+*|         --- 后端->相应书目like字段值加一,成功返回true,否则false
+*|
+*| '/dislike' --- 前端->发起url请求，参数'bookId=**'
+*|            --- 后端->相应书目dislike字段值加一,成功返回true,否则false
+*|
+*/
 
-Route::post('/index/dislike', 'index@dislike');			//反对链接
+Route::get('/', 'index@index');
 
-Route::get('/index/history', 'index@history');			//历史购书记录
+Route::get('/like', 'index@like');
 
-//comment
+Route::get('/dislike', 'index@dislike');
 
-Route::get('/comment', 'comment@index');				//评论页面
+/**
+*|--------------------------------------------------------------------------
+*|	History
+*|--------------------------------------------------------------------------
+*|
+*| '/history' --- 购书记录页面
+*|
+*/
 
-Route::post('/comment/update', 'comment@update');		//评论提交
+Route::get('/history', 'history@index');
 
-//recommend
+/**
+*|--------------------------------------------------------------------------
+*|	Message
+*|--------------------------------------------------------------------------
+*|
+*| '/message' --- 留言页面
+*|
+*| '/message/update' --- 前端->Ajax提交包括"留言书目","留言人","留言内容"
+*|                   --- 后端->插入留言数据，成功则返回true，否则false
+*/
 
-Route::get('/recommend', 'recommend@index');			//推荐页面
+Route::get('/message', 'message@index');
 
-Route::get('/recommend/query', 'recommend@query');		//解析目标网站URL
+Route::post('/message/update', 'message@update');
 
-Route::post('/recommend/commit', 'recommend@commit');	//提交推荐书目
+/**
+*|--------------------------------------------------------------------------
+*|	Recommend
+*|--------------------------------------------------------------------------
+*|
+*| '/recommend' --- 推荐页面
+*|
+*| '/recommend/query' --- 前端->URL请求，参数（target）为目标网址
+*|                    --- 后端->爬虫解析，返回目标网址上的书目信息
+*|
+*|
+*| '/recommend/update' --- 前端->表单提交推荐书目
+*|                     --- 后端->插入推荐书目，成功则返回true，否则返回false
+*/
 
-//personal
+Route::get('/recommend', 'recommend@index');
 
-Route::get('/personal', 'personal@index');				//个人管理页面
+Route::get('/recommend/query', 'recommend@query');
 
-Route::post('/personal/update', 'personal@update');		//更新书目信息
+Route::post('/recommend/update', 'recommend@update');
 
-//admin
 
-Route::get('/admin', 'admin@index');					//管理员页面
+/**
+*|--------------------------------------------------------------------------
+*|	Personal
+*|--------------------------------------------------------------------------
+*|
+*| '/personal' --- 个人页面
+*|
+*| '/personal/update' --- 前端->Ajax提交个人添加的网页链接，如精彩书评，学习资源
+*|                    --- 后端->插入link数据，成功则返回true，否则false
+*/
 
-Route::post('/admin/update', 'admin@update');			//更新管理信息
+Route::get('/personal', 'personal@index');
+
+Route::post('/personal/update', 'personal@update');
+
+/**
+*|--------------------------------------------------------------------------
+*|	Admin
+*|--------------------------------------------------------------------------
+*|
+*| '/admin' --- 管理员页面
+*|
+*| '/admin/toggle' --- 前端->Ajax发送post请求，内容为空
+*|                 --- 后端->更新数据（形式为toggle），成功则返回true，否则false
+*|
+*| '/admin/update' --- 前端->Ajax发送post请求，内容为已购买书目的ID
+*|                 --- 后端->更新数据，成功则返回true，否则false
+*/
+
+Route::get('/admin', 'admin@index');
+
+Route::post('/admin/toggle', 'admin@toggle');
+
+Route::post('/admin/update', 'admin@update');
 
 
 ?>
