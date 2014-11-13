@@ -1,0 +1,26 @@
+.commend{
+	position: fixed;
+	top: 66px;
+	left: 464px;
+}
+.textarea1{
+	height:100px;
+	width:480px;
+	position:fixed;
+	top:247px;
+	left:569px ;
+}
+.textarea2{
+	position:fixed;
+	top:363px;
+	left:569px;
+	height:100px;
+	width:480px;
+}
+.textarea3{
+	position:fixed;
+	top:83px;
+	left:1101px;
+	height:100px;
+	width:80px;
+}

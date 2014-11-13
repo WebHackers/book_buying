@@ -85,7 +85,6 @@ Route::get('/recommend/query', 'recommend@query');
 
 Route::post('/recommend/update', 'recommend@update');
 
-
 /**
 *|--------------------------------------------------------------------------
 *|	Personal
@@ -121,5 +120,8 @@ Route::post('/admin/toggle', 'admin@toggle');
 
 Route::post('/admin/update', 'admin@update');
 
+Route::get('/master', function(){
+	return View::make('layouts.master');
+});
 
 ?>

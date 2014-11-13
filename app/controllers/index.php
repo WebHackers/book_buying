@@ -1,22 +1,19 @@
 <?php
+	class index extends Controller {
+		
+		public function index () {
+			return View :: make ('layouts.show_books');  
+		}
 
-class Index extends BaseController {
+		public function like()
+		{
+			return 'like';
+		}
 
-	public function index()
-	{
-		return 'hello';
+		public function dislike()
+		{
+			return 'dislike';
+		}
 	}
-
-	public function like()
-	{
-		return 'like';
-	}
-
-	public function dislike()
-	{
-		return 'dislike';
-	}
-
-}
 
 ?>
