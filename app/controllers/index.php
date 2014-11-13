@@ -1,5 +1,5 @@
 <?php
-	class index extends Controller {
+	class Index extends Controller {
 		
 		public function index () {
 			return View :: make ('layouts.show_books');  

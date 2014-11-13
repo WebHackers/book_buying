@@ -1,6 +1,6 @@
 <head>
 	<title>图书推荐</title>
-	<link rel = "stylesheet" type = "text/css" href =  "/book_buying/public/css/book_recommend.css">
+	<link rel = "stylesheet" type = "text/css" href =  "/css/book_recommend.css">
 </head>
 @extends('layouts.master')
 
