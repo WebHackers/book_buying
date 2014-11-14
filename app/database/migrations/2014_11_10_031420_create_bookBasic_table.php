@@ -24,6 +24,7 @@ class CreateBookBasicTable extends Migration {
 			$table->float('book_price');
 			$table->string('book_status');
 			$table->integer('like');
+			$table->integer('dislike');
 		});
 	}
 

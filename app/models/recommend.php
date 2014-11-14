@@ -2,7 +2,7 @@
 
 class Recommend extends Eloquent {
 
-	protected $table = 'recommends';
+	protected $table = 'recommend';
 
 	protected $guarded = array('id');
 

@@ -2,7 +2,7 @@
 
 class BookDetail extends Eloquent {
 
-	protected $table = 'bookDetails';
+	protected $table = 'bookDetail';
 
 	protected $guarded = array('id');
 

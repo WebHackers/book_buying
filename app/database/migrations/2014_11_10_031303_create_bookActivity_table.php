@@ -16,7 +16,6 @@ class CreateBookActivityTable extends Migration {
 		{
 			$table->increments('id');
 			$table->timestamps();
-			$table->integer('act_id');
 			$table->string('act_period');
 			$table->integer('act_sum');
 			$table->string('act_status');

@@ -25,9 +25,9 @@
 	<div class = "sidebar">
 		<ul class = "connect">
 		<li><a href="/recommend"><b>图书推荐</b></a></li><br>
-		<li><a href ="/"  target = "_self"><b>查看推荐</b></a></li><br>
-		<li><a href ="personal.blade.php" target = "_self"><b>个人中心</b></a></li><br>
-		<li><a href ="manager.blade.php"  target = "_self"><b>管理员中心</b></a></li>
+		<li><a href ="/"><b>查看推荐</b></a></li><br>
+		<li><a href ="/personal"><b>个人中心</b></a></li><br>
+		<li><a href ="/admin"><b>管理员中心</b></a></li>
  		</ul>
 	</div>
 	
