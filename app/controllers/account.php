@@ -9,9 +9,9 @@ class Account extends BaseController {
 
 	public function login()
 	{
-		$name = Input::get('userName');
-		$password = Input::get('password');
-		$isRemmber = Input::get('remmber');
+		$name        = Input::get('userName');
+		$password    = Input::get('password');
+		$isRemmber   = Input::get('remmber');
 		$isAutoLogin = Input::get('autoLogin');
 
 		$password = Hash::make($password);
