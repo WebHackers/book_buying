@@ -20,9 +20,9 @@ class BookRecommend {
       $book['book_name'] = charsetReplace($post->innertext);
     }
 
-    // search book_picture
+    // search book_pic
     foreach ($html->find('div[class=pro_book_img] dl dt a[class=gray12a] img') as $post) {
-      $book['book_picture'] = $post->src;
+      $book['book_pic'] = $post->src;
     }
 
     // search book_price
@@ -35,14 +35,14 @@ class BookRecommend {
       $book['book_price_vip'] = charsetReplace($post->innertext);
     }
 
-    // search book_details
+    // search book_info
     foreach ($html->find('div[class=pro_r_deta] ul li') as $post) {
         $details = explode('：', charsetReplaceIgnoreSpace($post->innertext));
         if ($details[0] == '作者') {
-          $book['book_details'][$details[0]] = trim($details[1]);
+          $book['book_info'][$details[0]] = trim($details[1]);
         } else {
           $details = explode('：', charsetReplace($post->innertext));
-          $book['book_details'][$details[0]] = $details[1];
+          $book['book_info'][$details[0]] = $details[1];
         }
     }
 
@@ -72,9 +72,9 @@ class BookRecommend {
       }
     }
 
-    // search book_picture
+    // search book_pic
     foreach ($html->find('div[class=show_pic] div[class=pic] img') as $post) {
-      $book['book_picture'] = $post->wsrc;
+      $book['book_pic'] = $post->wsrc;
     }
 
     // search book_price
@@ -87,7 +87,7 @@ class BookRecommend {
       $book['book_price_vip'] = charsetReplace($post->innertext);
     }
 
-    // search book_details
+    // search book_info
     $i = 0;
     $bookLeft = [];
     $bookRight = [];
