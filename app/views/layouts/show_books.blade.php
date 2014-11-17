@@ -5,6 +5,7 @@
 @extends('layouts.master')
 @section('content')
 
+
 	<div class="main" id = "text">
 	
   		<a href = "first_book.php" class ="btn btn-primary btn-lg disabled" target = "_blank" id ="hi" >细说PHP</a><br><br>
@@ -23,4 +24,5 @@
 	};
 
 </script>
+
 @stop

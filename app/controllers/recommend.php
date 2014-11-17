@@ -4,12 +4,24 @@ class Recommend extends BaseController {
 
 	public function index()
 	{
-		return 'hello_recommend';
+		if(true)
+		{
+			return View::make('layouts.book_recommend');
+		}
+		else
+		{
+			return Redirect::to('loginPage')->with('message', 'Please Login');
+		}
 	}
 
 	public function query()
 	{
-		return 'query_recommend';
+		if(Input::has('target'))
+		{
+			$target = Input::get('target');
+			return $target;
+		}
+		return Redirect::to('recommend');
 	}
 
 	public function update()
@@ -66,7 +78,7 @@ class Recommend extends BaseController {
 			$recommend->buy_link   = $buy_link;
 			$recommend->save();
 
-			//turn to personal
+			//turn to personal page
 		}
 
 	}

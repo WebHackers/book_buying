@@ -20,7 +20,6 @@ class CreateUsersTable extends Migration {
 			$table->string('user_name');
 			$table->string('user_password');
 			$table->string('user_rank');
-			$table->string('remember_token');
 		});
 	}
 
