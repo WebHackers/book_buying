@@ -36,7 +36,7 @@ class Recommend extends BaseController {
 			}
 			else
 			{
-				retuern "购书活动已关闭";
+				return "购书活动已关闭";
 			}
 
 			$bookBasic  = new BookBasic;
