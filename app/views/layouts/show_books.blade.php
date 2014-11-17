@@ -5,5 +5,4 @@
 @extends('layouts.master')
 @section('content')
 
-查看推荐待续
 @stop

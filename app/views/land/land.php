@@ -24,7 +24,7 @@
 				<br><br>
 				<strong>密&nbsp;&nbsp;码<i class = "icon-lock"></i>：</strong>
 				&nbsp;&nbsp;<input type = "password" name = "password"><br>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type = "checkbox" name ="remmber">记住密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type = "checkbox" name ="remember">记住密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type = "checkbox" name = "autoLogin">自动登录<br><br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type = "submit" name = "submit" class = "btn" onclick ="checkinput(this);">登录</button>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
