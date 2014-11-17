@@ -1,0 +1,14 @@
+.main{
+	position: fixed;
+	top: 95px;
+	left: 538px;
+    font-size: 20px;
+
+}
+
+#text a:hover{
+	-webkit-box-shadow: 10px 10px 5px #888888;
+}
+
+
+

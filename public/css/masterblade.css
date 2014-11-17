@@ -2,10 +2,11 @@
 	position: fixed;
 	left: 175px;
 	top:0px;
-	background-color: grey;
+	background-color: rgba(128,128,128, 0.7);
 	border: solid 1px grey;
 	width:1060px;
 	height:40px;
+
 }
 .systemname{
 	margin-top: 8px;
@@ -42,14 +43,16 @@
 	position:fixed;
 	left: 219px;
 	top: 91px;
-
 	width: 100px;
 	height: 120px;
-	
-
+	list-style-type: none;
 }
 .connect a{
 	text-decoration: none;
+	color:black;
+}
+.connect a b{
+	color:black;
 }
 .connect  a:link
 	{ color:black;
