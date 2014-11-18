@@ -17,6 +17,7 @@ class CreateBookDetailTable extends Migration {
 			$table->increments('id');
 			$table->timestamps();
 			$table->integer('book_id');
+			$table->string('buy_time');
 			$table->text('book_pic');
 			$table->text('book_link');
 		});
