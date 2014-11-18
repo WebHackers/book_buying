@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<title>主页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

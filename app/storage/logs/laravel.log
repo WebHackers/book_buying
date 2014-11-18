@@ -878,6 +878,146 @@ Stack trace:
 #9 /opt/lampp/htdocs/book_buying/bootstrap/compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #10 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
 #11 {main} [] []
+<<<<<<< HEAD
+[2014-11-17 02:14:49] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 02:58:42] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 02:58:50] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 03:15:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 03:33:31] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 04:07:50] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 04:55:07] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 05:12:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-17 05:20:21] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 05:37:20] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 05:37:49] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 06:24:10] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 06:24:34] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 06:25:25] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 06:25:40] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 06:49:06] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-17 06:50:06] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in G:\xampp\htdocs\book_buying\app\controllers\recommend.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+=======
 [2014-11-17 02:31:05] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"购书活动已关闭"' (T_CONSTANT_ENCAPSED_STRING)' in /opt/lampp/htdocs/book_buying/app/controllers/recommend.php:39
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
@@ -921,3 +1061,4 @@ Stack trace:
 #9 /opt/lampp/htdocs/book_buying/bootstrap/compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #10 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
 #11 {main} [] []
+>>>>>>> 7cf2f196c9f71998419c89e5124c1fc3b439b057
