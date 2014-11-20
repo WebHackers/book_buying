@@ -20,7 +20,7 @@
 				<legend ><p class = "landfont"><strong>用户登录</strong></p></legend>
 			<form name = "input" action = "./login" method = "post">
 				<strong>用户名<i class = "icon-user"></i>：</strong>
-				<input type = "text" name = "userName">
+				<input type = "text" name = "user_name">
 				<br><br>
 				<strong>密&nbsp;&nbsp;码<i class = "icon-lock"></i>：</strong>
 				&nbsp;&nbsp;<input type = "password" name = "password"><br>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,10 +33,10 @@
 			
 
 			</form>
-			<div class = "title">图书管理系统</div>
+			<div class = "title">图书购买系统</div>
 			<div class = "singal">
-				<a href = "http://www.hdu.edu.cn" target = "_blank"><img src= "
-					/book_buying/public/img/xh4.gif"></a>
+				<!--<a href = "http://www.hdu.edu.cn" target = "_blank"><img src= "
+					/book_buying/public/img/xh.gif"></a>-->
 			</div>
 		</div>
 		<div class = "poster">

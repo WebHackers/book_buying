@@ -9,7 +9,7 @@
 
 }
 .systemname{
-	margin-top: 8px;
+	margin-top: 0px;
 	font-family: 华文行楷;
 	font-size: 32px;
 	color: green;
@@ -43,7 +43,7 @@
 	position:fixed;
 	left: 219px;
 	top: 91px;
-	width: 100px;
+	width: 150px;
 	height: 120px;
 	list-style-type: none;
 }

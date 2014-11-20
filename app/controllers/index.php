@@ -2,7 +2,7 @@
 	class Index extends Controller {
 		
 		public function index () {
-			$books = BookBasic::all();
+			//$books = BookBasic::all();
 			return View :: make ('layouts.show_books');  
 		}
 
