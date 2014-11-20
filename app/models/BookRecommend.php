@@ -1,22 +1,23 @@
-<?php
+<?
 //-------------------- use simple_html_dom --------------------
 include_once('simple_html_dom.php');
 
+//-------------------- china-pub --------------------
 class BookRecommend {
-  public function chinapub($bookId) {
+  function chinapub($bookId) {
     $url = "http://product.china-pub.com/" . $bookId;
     $html = new simple_html_dom();
     $html->load_file($url);
-dd($html);
+
     $book = [];
     // search book_name
     foreach ($html->find('div[class=pro_book] h1') as $post) {
       $book['book_name'] = $this->charsetReplace($post->innertext);
     }
 
-    // search book_picture
+    // search book_pic
     foreach ($html->find('div[class=pro_book_img] dl dt a[class=gray12a] img') as $post) {
-      $book['book_picture'] = $post->src;
+      $book['book_pic'] = $post->src;
     }
 
     // search book_price
@@ -32,27 +33,37 @@ dd($html);
     // search book_details
     foreach ($html->find('div[class=pro_r_deta] ul li') as $post) {
         $details = explode('：', $this->charsetReplaceIgnoreSpace($post->innertext));
-        if ($details[0] == '作者') {
+        /*if ($details[0] == '作者') {
           $book['book_details'][$details[0]] = trim($details[1]);
         } else {
           $details = explode('：', $this->charsetReplace($post->innertext));
           $book['book_details'][$details[0]] = $details[1];
+        }*/
+        switch ($details[0]) {
+          case '作者':
+            $book['book_author'] = trim($details[1]);
+            break;  
+          case '出版日期':
+            $details = explode('：', $this->charsetReplace($post->innertext));
+            $book['book_publish'] = $details[1];
+            break;
         }
     }
 
     // search book_editor_choice
     foreach ($html->find('div[class=pro_r_deta] p') as $post)
     {
-      $book['editor_choice'] = $this->charsetReplace($post->innertext);
+      $book['book_info'] = $this->charsetReplace($post->innertext);
     }
 
     //$response = json_encode($book);
     //echo $response;
+    //print_r($book);
     return $book;
   }
 
-//-------------------- dangdang --------------------
-  public function dangdang($bookId) {
+  //-------------------- dangdang --------------------
+  function dangdang($bookId) {
     $url = "http://product.dangdang.com/" . $bookId . ".html";
     $html = new simple_html_dom();
     $html->load_file($url);
@@ -66,9 +77,9 @@ dd($html);
       }
     }
 
-    // search book_picture
+    // search book_pic
     foreach ($html->find('div[class=show_pic] div[class=pic] img') as $post) {
-      $book['book_picture'] = $post->wsrc;
+      $book['book_pic'] = $post->wsrc;
     }
 
     // search book_price
@@ -83,6 +94,7 @@ dd($html);
 
     // search book_details
     $i = 0;
+    $flag = 0;
     $bookLeft = [];
     $bookRight = [];
     foreach ($html->find('div[class=show_info] div[class=book_messbox] div[class=clearfix m_t6]') as $post) {
@@ -106,24 +118,34 @@ dd($html);
       $i++;
     }
 
-    for ($j = 0; $j < $i; $j++) {
-      $book['details'][$bookLeft[$j]] = $bookRight[$j];
+    for ($j = 0; $j < count($bookLeft); $j++) {
+      switch ($bookLeft[$j]) {
+        case '作者':
+          $book['book_author'] = $bookRight[$j];
+          break;  
+        case '出版时间':
+          $book['book_publish'] = $bookRight[$j];
+          break;
+      }
+      
     }
 
     // search book_editor_choice
-    foreach ($html->find('div[class=t_box] div[class=pro_content] div[class=descrip]') as $post)
+    foreach ($html->find('div[id=abstract] div[class=descrip]') as $post)
     {
-      $book['editor_choice'] = $this->charsetReplace($post->innertext);
+      $book['book_info'] = $this->charsetReplace($post->innertext);
     }
 
     //$response = json_encode($book);
     //echo $response;
+    //print_r($book);
     return $book;
   }
 
   function charsetReplace($str) {
     $arr = ['　' => '',
             ' ' => '',
+            '	' => '',
             '&yen' => '',
             '&yen;' => '',
             '&nbsp' => '',
@@ -145,9 +167,4 @@ dd($html);
     return strtr($str, $arr);
   }
 }
-
-
-$book = new BookRecommend;
-$arr = $book->chinapub(3803408);
-print_r($arr);
 

@@ -19,6 +19,7 @@ class CreateBookBasicTable extends Migration {
 			$table->integer('act_id');
 			$table->string('book_name');
 			$table->string('book_author');
+			$table->string('book_pub');
 			$table->string('book_type');
 			$table->text('book_info');
 			$table->float('book_price');

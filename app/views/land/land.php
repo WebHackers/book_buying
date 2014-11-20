@@ -20,7 +20,7 @@
 				<legend ><p class = "landfont"><strong>用户登录</strong></p></legend>
 			<form name = "input" action = "./login" method = "post">
 				<strong>用户名<i class = "icon-user"></i>：</strong>
-				<input type = "text" name = "userName">
+				<input type = "text" name = "user_id">
 				<br><br>
 				<strong>密&nbsp;&nbsp;码<i class = "icon-lock"></i>：</strong>
 				&nbsp;&nbsp;<input type = "password" name = "password"><br>&nbsp;&nbsp;&nbsp;&nbsp;
