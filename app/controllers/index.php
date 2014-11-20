@@ -5,7 +5,6 @@
 			if(Auth::check())
 			{
 				//$books = BookBasic::all();
-				return Auth::Id();
 				return View::make ('layouts.show_books');
 			}
 			else
