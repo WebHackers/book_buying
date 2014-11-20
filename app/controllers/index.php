@@ -2,11 +2,7 @@
 	class Index extends Controller {
 		
 		public function index () {
-<<<<<<< HEAD
-			//$books = BookBasic::all();
-			return View :: make ('layouts.show_books');  
-=======
-			if(Auth::check())
+			if(true)
 			{
 				//$books = BookBasic::all();
 				return View::make ('layouts.show_books');
@@ -15,7 +11,6 @@
 			{
 				return View::make('land.land');
 			}
->>>>>>> 98b6e83e52395eafe7a3b40af268f9c9ce0f1c4e
 		}
 
 		public function like()
