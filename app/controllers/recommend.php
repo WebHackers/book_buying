@@ -19,7 +19,9 @@ class Recommend extends BaseController {
 		if(Input::has('target'))
 		{
 			$target = Input::get('target');
-			return $target;
+			$book = new BookRecommend;
+			return $book->chinapub($target);
+			//return $target;
 		}
 		return Redirect::to('recommend');
 	}
@@ -30,6 +32,7 @@ class Recommend extends BaseController {
 		$book_pic    = Input::get('book_pic');
 		$book_name   = Input::get('book_name');
 		$book_author = Input::get('book_author');
+		$book_pub 	 = Input::get('book_pub');
 		$book_type   = Input::get('book_type');
 		$book_info   = Input::get('book_info');
 		$book_price  = Input::get('book_price');
@@ -37,18 +40,18 @@ class Recommend extends BaseController {
 		$rec_type    = Input::get('rec_type');
 
 		if($book_name==''||$book_price==''||$book_type==''||$rec_reason==''||$rec_type=='')
-		{ 
+		{
 			return "KeyInfo couldn't be empty!";
 		}
 		else
-		{
-			if(Activity::where('act_status', '=', true)->get())
+		{return Input::all();
+			/*if(Activity::where('act_status', '=', true)->get())
 			{
 				$act_id = Activity::where('act_status', '=', true)->get()->id;
 			}
 			else
 			{
-				return "购书活动已关闭";
+				$act_id = 0;
 			}
 
 			$bookBasic  = new BookBasic;
@@ -58,6 +61,7 @@ class Recommend extends BaseController {
 			$bookBasic->act_id      = $act_id;
 			$bookBasic->book_name   = $book_name;
 			$bookBasic->book_author = $book_author;
+			$bookBasic->book_pub    = $book_pub;
 			$bookBasic->book_type   = $book_type;
 			$bookBasic->book_info   = $book_info;
 			$bookBasic->book_price  = $book_price;
@@ -67,6 +71,7 @@ class Recommend extends BaseController {
 			$bookBasic->save();
 
 			$bookDetail->book_id   = $bookBasic->id;
+			$bookDetail->buy_time  = 0;
 			$bookDetail->book_pic  = $book_pic;
 			$bookDetail->book_link = '';
 			$bookDetail->save();
@@ -76,7 +81,7 @@ class Recommend extends BaseController {
 			$recommend->rec_reason = $rec_reason;
 			$recommend->rec_type   = $rec_type;
 			$recommend->buy_link   = $buy_link;
-			$recommend->save();
+			$recommend->save();*/
 
 			//turn to personal page
 		}
