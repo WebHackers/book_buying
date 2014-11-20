@@ -7,15 +7,15 @@ class Account extends BaseController {
 		return View::make('land.land');
 	}
 
-	public function login()
+	public function login()	
 	{
-		$user_name   = Input::get('user_name');
-		$password 	 = Input::get('password');
-		$isRemember  = Input::get('remember');
-		$isAutoLogin = Input::get('autoLogin');
-
-		$password = Hash::make($password);
-		
+		if(Auth::attempt(Input::only('user_id', 'password'))) {  
+			return Redirect::intended('/');  
+		} else {
+			return Redirect::back()  
+			->withInput()
+			->with('error', "Invalid credentials");
+		}	
 	}
 
 	public function logout()

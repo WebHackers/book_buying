@@ -10,7 +10,7 @@ class BookBasic extends Eloquent {
     {
         return $this->hasOne('bookDetail');
     }
-
+ 
     public function recomInfo()
     {
         return $this->hasOne('recommend');
