@@ -2112,3 +2112,11 @@ Stack trace:
 #10 /var/www/html/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
 >>>>>>> 4aef3d72ffe90181ec223da8c09f6675941108f5
 #11 {main} [] []
+[2014-11-20 13:03:06] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Book' not found' in /opt/lampp/htdocs/book_buying/app/controllers/recommend.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-20 13:04:12] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Book' not found' in /opt/lampp/htdocs/book_buying/app/controllers/recommend.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

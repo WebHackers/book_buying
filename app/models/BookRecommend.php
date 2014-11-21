@@ -4,10 +4,9 @@ include_once('simple_html_dom.php');
 
 //-------------------- china-pub --------------------
 class BookRecommend {
-  function chinapub($bookId) {
-    $url = "http://product.china-pub.com/" . $bookId;
+  function chinapub($bookUrl) {
     $html = new simple_html_dom();
-    $html->load_file($url);
+    $html->load_file($bookUrl);
 
     $book = [];
     // search book_name
@@ -63,10 +62,9 @@ class BookRecommend {
   }
 
   //-------------------- dangdang --------------------
-  function dangdang($bookId) {
-    $url = "http://product.dangdang.com/" . $bookId . ".html";
+  function dangdang($bookUrl) {
     $html = new simple_html_dom();
-    $html->load_file($url);
+    $html->load_file($bookUrl);
 
     $book = [];
     // search book_name

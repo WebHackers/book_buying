@@ -20,10 +20,11 @@ class Recommend extends BaseController {
 		{
 			$target = Input::get('target');
 			$book = new BookRecommend;
-			return $book->chinapub($target);
+			$arr = $book->chinapub($target);
+			print_r($arr);
 			//return $target;
 		}
-		return Redirect::to('recommend');
+		//return Redirect::to('recommend');
 	}
 
 	public function update()
