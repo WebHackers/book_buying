@@ -2,7 +2,7 @@
 	class Index extends Controller {
 		
 		public function index () {
-			if(Auth::check())
+			if(true)
 			{
 				//$books = BookBasic::all();
 				return View::make ('layouts.show_books');

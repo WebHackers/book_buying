@@ -8,7 +8,7 @@
 
 	<div class="main" id = "text">
 	
-  		<a href = "first_book.php" class ="btn btn-primary btn-lg disabled" target = "_blank" id ="hi" >细说PHP</a><br><br>
+  		<a href = "first_book.php" class ="btn btn-primary btn-lg disabled" target = "_blank" id ="hi" style="">细说PHP</a><br><br>
   		<a href = "second_book.php"  class ="btn btn-primary btn-lg disabled" target = "_blank">精通Jquery</a><br><br>
   		<a href = "third_book.php"  class ="btn btn-primary btn-lg disabled" target = "_blank">UNIX网络编程</a><br>
 	

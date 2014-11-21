@@ -3,12 +3,11 @@
 <head>
 	<title>主页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type = "text/javascript" src = "/bootstrap/js/bootstrap.js"></script> 
+	
 	<script type = "text/javascript" src = "/bootstrap/js/bootstrap.min.js"></script> 
+	<script type = "text/javascript" src = "/bootstrap/js/npm.js"></script> 
 	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap.min.css">
-	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap-responsive.css">
-	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap.css">
-	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap-responsive.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap-theme.css">
 	<link rel = "stylesheet" type = "text/css" href = "/css/land.css">
 	<link rel = "stylesheet" type = "text/css" href = "/css/masterblade.css">
 	
@@ -21,8 +20,9 @@
 	</caption>
 	
 
-
-	<div class = "sidebar">
+<div class = "container-fluid">
+	<div class = "row-fluid"> 
+	<div class = " span2">
 		<ul class = "connect">
 		<li><a href="/recommend"><b>图书推荐</b></a></li><br>
 		<li><a href ="/"><b>查看推荐</b></a></li><br>
@@ -31,11 +31,11 @@
  		</ul>
 	</div>
 	
-	<div class  ="container">
+	<div class  =" span12">
 		 @yield('content')
 	</div>	
-
-
+</div>
+</div>
 
 	<footer>
 		<div class ="footer">

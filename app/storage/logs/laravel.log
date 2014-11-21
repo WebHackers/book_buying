@@ -1062,6 +1062,1269 @@ Stack trace:
 #10 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
 #11 {main} [] []
 >>>>>>> 7cf2f196c9f71998419c89e5124c1fc3b439b057
+<<<<<<< HEAD
+[2014-11-17 07:20:37] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge'' in G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7632): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7628): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7540): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7495): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7376): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7363): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(6948): Illuminate\Database\Eloquent\Model->getConnection()
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(6915): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#10 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(6475): Illuminate\Database\Eloquent\Model->newQuery()
+#11 G:\xampp\htdocs\book_buying\app\controllers\index.php(5): Illuminate\Database\Eloquent\Model::all()
+#12 [internal function]: Index->index()
+#13 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(247): ReflectionClass->newInstanceArgs(Array)
+#14 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(205): Illuminate\Container\Container->build('index', Array)
+#15 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(583): Illuminate\Container\Container->make('index', Array)
+#16 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5771): Illuminate\Foundation\Application->make('index')
+#17 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5760): Illuminate\Routing\ControllerDispatcher->makeController('index')
+#18 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4971): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'index', 'index')
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5329): call_user_func_array(Object(Closure), Array)
+#21 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4996): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#23 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#26 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#27 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#28 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#29 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#30 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#31 {main} [] []
+[2014-11-17 07:20:46] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge'' in G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7632): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7628): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7540): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7495): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7376): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7363): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(6948): Illuminate\Database\Eloquent\Model->getConnection()
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(6915): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#10 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(6475): Illuminate\Database\Eloquent\Model->newQuery()
+#11 G:\xampp\htdocs\book_buying\app\controllers\index.php(5): Illuminate\Database\Eloquent\Model::all()
+#12 [internal function]: Index->index()
+#13 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(247): ReflectionClass->newInstanceArgs(Array)
+#14 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(205): Illuminate\Container\Container->build('index', Array)
+#15 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(583): Illuminate\Container\Container->make('index', Array)
+#16 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5771): Illuminate\Foundation\Application->make('index')
+#17 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5760): Illuminate\Routing\ControllerDispatcher->makeController('index')
+#18 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4971): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'index', 'index')
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5329): call_user_func_array(Object(Closure), Array)
+#21 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4996): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#23 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#26 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#27 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#28 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#29 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#30 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#31 {main} [] []
+[2014-11-19 13:48:46] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 13:51:12] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 13:52:54] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5704
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5700): Illuminate\Routing\RouteCollection->methodNotAllowed(Array)
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5678): Illuminate\Routing\RouteCollection->getOtherMethodsRoute(Object(Illuminate\Http\Request), Array)
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#10 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#11 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#12 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-11-19 13:53:26] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5704
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5700): Illuminate\Routing\RouteCollection->methodNotAllowed(Array)
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5678): Illuminate\Routing\RouteCollection->getOtherMethodsRoute(Object(Illuminate\Http\Request), Array)
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#10 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#11 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#12 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-11-19 14:00:38] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 14:04:06] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 14:04:18] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 14:04:56] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 14:05:44] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 14:05:48] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-19 14:06:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 06:08:33] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:51:47] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:53:55] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:54:14] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:54:54] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:55:54] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:56:38] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:56:50] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 07:58:09] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:00:37] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:01:08] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:01:48] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:02:33] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:03:26] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:04:37] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:05:45] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:07:37] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:07:56] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:08:44] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:08:47] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:10:11] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:11:11] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:11:47] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:12:28] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:15:40] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:16:18] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:19:13] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:19:59] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:21:16] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:21:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:22:07] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:22:33] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:23:29] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:27:38] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:28:25] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:31:08] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:33:33] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:35:03] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:35:21] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:35:24] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:35:43] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:36:02] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:36:21] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:37:03] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:48:11] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:48:23] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:52:20] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:52:20] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:07] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:09] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:10] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:14] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:35] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:37] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:52] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 08:54:54] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 09:55:23] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:00:21] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:02:32] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:02:46] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:02:54] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:05:09] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:05:12] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:11:21] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:11:32] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:11:49] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:12:02] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:12:16] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:15:07] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:16:28] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 10:47:49] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 11:49:51] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 11:49:58] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2014-11-20 11:50:17] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in G:\xampp\htdocs\book_buying\bootstrap\compiled.php:5680
+Stack trace:
+#0 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(5004): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4992): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(4984): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(7744): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8351): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(8298): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(10957): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 G:\xampp\htdocs\book_buying\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
+=======
 [2014-11-19 07:56:24] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'BookBasic' not found' in /var/www/html/book_buying/app/controllers/index.php:5
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
@@ -2111,6 +3374,7 @@ Stack trace:
 #9 /var/www/html/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #10 /var/www/html/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
 >>>>>>> 4aef3d72ffe90181ec223da8c09f6675941108f5
+>>>>>>> 98b6e83e52395eafe7a3b40af268f9c9ce0f1c4e
 #11 {main} [] []
 [2014-11-20 13:03:06] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Book' not found' in /opt/lampp/htdocs/book_buying/app/controllers/recommend.php:22
 Stack trace:

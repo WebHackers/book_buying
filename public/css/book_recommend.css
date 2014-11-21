@@ -1,26 +1,63 @@
 .commend{
 	position: fixed;
 	top: 66px;
-	left: 464px;
+	left: 490px;
+	
 }
-.textarea1{
-	height:100px;
-	width:480px;
-	position:fixed;
-	top:247px;
-	left:569px ;
-}
-.textarea2{
-	position:fixed;
-	top:363px;
-	left:569px;
-	height:100px;
-	width:480px;
-}
+
 .textarea3{
 	position:fixed;
-	top:83px;
-	left:1101px;
+	top:123px;
+	left:1100px;
 	height:100px;
 	width:80px;
+}
+#type{
+	position: fixed;
+	top:302px;
+	left: 482px;
+}
+.book_type{
+	position: fixed;
+	top:300px;
+	left: 550px;
+}
+.rec_type{
+	position: fixed;
+	top:359px;
+	left: 572px;
+}
+#reason{
+	position: fixed;
+	top:390px;
+	left: 480px;
+}
+#book_infor{
+	position: fixed;
+	top:223px;
+	left: 483px;
+}
+#book_info{
+	position: fixed;
+	top:223px;
+	left: 555px;
+	width:400px;
+	height:50px;
+}
+#rectp{
+	position: fixed;
+	top:358px;
+	left: 479px;
+}
+.rec_reason{
+	position: fixed;
+	top:398px;
+	left: 555px;
+	width:500px;
+	height: 75px;
+}
+.submit1{
+	position: fixed;
+	top:500px;
+	left: 1093px;
 }
