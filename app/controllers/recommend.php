@@ -16,27 +16,40 @@ class Recommend extends BaseController {
 
 	public function query()
 	{
-		if(Input::has('target'))
-		{
+		if(Input::has('target')) {
 			$target = Input::get('target');
-			$book = new BookRecommend;
-			$arr = $book->chinapub($target);
-			print_r($arr);
-			//return $target;
+			$book = new TargetQuery;
+
+			if(strpos($target, 'china-pub')) {
+				$arr = $book->chinapub($target);
+			}
+			else {
+				if(strpos($target, 'dangdang')) {
+					$arr = $book->dangdang($target);
+				}
+				else {
+					return false;
+				}
+			}
+			$arr['buy_link'] = $target;
+			return $arr;
 		}
-		//return Redirect::to('recommend');
+		else {
+			return Redirect::to('recommend');
+		}
 	}
 
 	public function update()
 	{
-		$buy_link    = Input::get('target');
+		$price = str_replace('￥', '', Input::get('book_price'));
+		$book_price  = $price;
+		$buy_link    = Input::get('buy_link');
 		$book_pic    = Input::get('book_pic');
 		$book_name   = Input::get('book_name');
 		$book_author = Input::get('book_author');
 		$book_pub 	 = Input::get('book_pub');
 		$book_type   = Input::get('book_type');
 		$book_info   = Input::get('book_info');
-		$book_price  = Input::get('book_price');
 		$rec_reason  = Input::get('rec_reason');
 		$rec_type    = Input::get('rec_type');
 
@@ -45,21 +58,12 @@ class Recommend extends BaseController {
 			return "KeyInfo couldn't be empty!";
 		}
 		else
-		{return Input::all();
-			/*if(Activity::where('act_status', '=', true)->get())
-			{
-				$act_id = Activity::where('act_status', '=', true)->get()->id;
-			}
-			else
-			{
-				$act_id = 0;
-			}
-
+		{
 			$bookBasic  = new BookBasic;
 			$bookDetail = new BookDetail;
-			$recommend  = new Recommend;
+			$recommend  = new BookRecommend;
 
-			$bookBasic->act_id      = $act_id;
+			$bookBasic->act_id      = 0;
 			$bookBasic->book_name   = $book_name;
 			$bookBasic->book_author = $book_author;
 			$bookBasic->book_pub    = $book_pub;
@@ -71,20 +75,21 @@ class Recommend extends BaseController {
 			$bookBasic->dislike     = 0;
 			$bookBasic->save();
 
-			$bookDetail->book_id   = $bookBasic->id;
-			$bookDetail->buy_time  = 0;
-			$bookDetail->book_pic  = $book_pic;
-			$bookDetail->book_link = '';
+			$bookDetail->book_id    = $bookBasic->id;
+			$bookDetail->buy_time   = '0';
+			$bookDetail->book_pic   = $book_pic;
+			$bookDetail->book_link  = '';
 			$bookDetail->save();
 
-			//$recommend->user_id    = ;
-			$recommend->book_id    = $bookBasic->id;;
-			$recommend->rec_reason = $rec_reason;
-			$recommend->rec_type   = $rec_type;
-			$recommend->buy_link   = $buy_link;
-			$recommend->save();*/
+			$recommend->user_id     = 0;
+			$recommend->book_id     = $bookBasic->id;
+			$recommend->rec_reason  = $rec_reason;
+			$recommend->rec_type    = $rec_type;
+			$recommend->buy_link    = $buy_link;
+			$recommend->save();
 
-			//turn to personal page
+			return Redirect::to('personal');
+
 		}
 
 	}
