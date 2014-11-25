@@ -45,6 +45,9 @@ class TargetQuery {
           case '出版日期':
             $details = explode('：', $this->charsetReplace($post->innertext));
             $book['book_publish'] = $details[1];
+          case 'ISBN':
+            $details = explode('：', $this->charsetReplace($post->innertext));
+            $book['book_publish'] = $details[1];
             break;
         }
     }
@@ -122,6 +125,9 @@ class TargetQuery {
           $book['book_author'] = $bookRight[$j];
           break;  
         case '出版时间':
+          $book['book_publish'] = $bookRight[$j];
+          break;
+        case 'ISBN':
           $book['book_publish'] = $bookRight[$j];
           break;
       }
