@@ -1,7 +1,6 @@
 .body{
 	margin-top: 25px;
 	margin-left: 0px;
-	background-color:#7093DB;
 	background-position: 75% 75%;
 	width:1024px;
 }
@@ -23,7 +22,7 @@
 .posterfont{
 	font-size: 28px;
 	font-family: 华文新魏;
-	color:yellow;
+	color:grey;
 }
 #user_id{
 	width: 200px;
