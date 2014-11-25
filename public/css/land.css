@@ -1,42 +1,50 @@
 .body{
 	margin-top: 25px;
+	margin-left: 0px;
 	background-color:#7093DB;
 	background-position: 75% 75%;
+	width:1024px;
 }
 
 .landmain{
-
-	
-    position: fixed;
-    top:253px;
-    left: 495px;
-	
+    margin-top:156px;
+    margin-left: 156px;
+	text-align: center;
+}
+.formmain{
+	margin-left: 401px;
 }
 .landfont{
-	font-size:20px;
+	font-size:28px;
 	font-family: "华文行楷";
 	color:black;
 
 }
-.title{
-	font-family: 华文行楷;
-	font-size:40px;
-	position:fixed;
-	top:145px;
-	left:530px;
-}
-.singal{
-	position: fixed;
-    top:35px;
-    left: 940px;
-	
-}
-.poster{
-	position: fixed;
-	top:515px;
-}
 .posterfont{
-	font-size: 20px;
+	font-size: 28px;
 	font-family: 华文新魏;
 	color:yellow;
+}
+#user_id{
+	width: 200px;
+}
+#password{
+	width: 200px;
+}
+hr{
+	width: 400px;
+	margin-left: 490px;
+}
+#user{
+	margin-left
+}
+#autoland{
+	margin-left: 200px;
+}
+#button1{
+	margin-left: 190px;
+}
+.roll{
+	margin-left: 200px;
+	margin-top:50px;
 }

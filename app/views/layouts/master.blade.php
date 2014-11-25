@@ -6,6 +6,8 @@
 	
 	<script type = "text/javascript" src = "/bootstrap/js/bootstrap.min.js"></script> 
 	<script type = "text/javascript" src = "/bootstrap/js/npm.js"></script> 
+	<script type = "text/javascript" src = "/bootstrap/js/jquery-1.11.1.min.js"></script> 
+	<script type = "text/javascript" src = "/js/masterblade.js"></script> 
 	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap.min.css">
 	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap-theme.css">
 	<link rel = "stylesheet" type = "text/css" href = "/css/land.css">
@@ -14,8 +16,11 @@
 </head>
 <body>
 	<caption>
-	<div class = "top">
-		<p class = "systemname">创新创业实验班购书系统</p>
+	<div class = "top row">
+		<div class = "col-md-11 systemname">创新创业实验班购书系统</div>
+		<div class = "col-md-1">
+			<a href = "land.php" title = "注销"><b>用户名</b></a>
+		</div>
 	</div>
 	</caption>
 	
