@@ -31,7 +31,7 @@
 <br>
   <div class="row col-md-12">
   	<img src = "/img/php.jpg" alt = "细说PHP" class = "picclass img-circle">
-  	<a href = "first_book.php"   target = "_blank" id ="hi">细说PHP</a>
+  	<a href = "./message"   target = "_blank" id ="hi">细说PHP</a>
   </div>
 
 
