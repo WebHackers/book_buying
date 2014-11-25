@@ -8,17 +8,17 @@ class BookBasic extends Eloquent {
 
 	public function detail()
     {
-        return $this->hasOne('bookDetail');
+        return $this->hasOne('BookDetail');
     }
  
     public function recomInfo()
     {
-        return $this->hasOne('recommend');
+        return $this->hasOne('Recommend');
     }
 
     public function message()
     {
-        return $this->hasMany('bookMessage');
+        return $this->hasMany('BookMessage');
     }
 
     public function activity()

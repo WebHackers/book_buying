@@ -3376,6 +3376,7 @@ Stack trace:
 >>>>>>> 4aef3d72ffe90181ec223da8c09f6675941108f5
 >>>>>>> 98b6e83e52395eafe7a3b40af268f9c9ce0f1c4e
 #11 {main} [] []
+<<<<<<< HEAD
 [2014-11-22 12:02:59] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '<<' (T_SL)' in G:\xampp\htdocs\book_buying\app\controllers\index.php:5
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
@@ -4718,3 +4719,13 @@ Stack trace:
 #9 G:\xampp\htdocs\book_buying\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #10 G:\xampp\htdocs\book_buying\public\index.php(49): Illuminate\Foundation\Application->run()
 #11 {main} [] []
+=======
+[2014-11-20 13:03:06] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Book' not found' in /opt/lampp/htdocs/book_buying/app/controllers/recommend.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-11-20 13:04:12] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Book' not found' in /opt/lampp/htdocs/book_buying/app/controllers/recommend.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+>>>>>>> 0d24126aae7e1e9efcd1f2a74450e2ee910ae5e1

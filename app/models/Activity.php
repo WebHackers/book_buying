@@ -8,7 +8,7 @@ class Activity extends Eloquent {
 
 	public function book()
     {
-        return $this->hasMany('bookBasic');
+        return $this->hasMany('BookBasic');
     }
 
 }

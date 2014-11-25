@@ -8,7 +8,7 @@ class BookDetail extends Eloquent {
 
 	public function basic()
     {
-        return $this->belongsTo('bookBasic');
+        return $this->belongsTo('BookBasic');
     }
 
 }
