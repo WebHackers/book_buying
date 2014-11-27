@@ -1,7 +1,5 @@
 .top{
-	position: fixed;
-	left: 175px;
-	top:0px;
+	margin-left: 175px;
 	background-color: rgba(128,128,128, 0.7);
 	border: solid 1px grey;
 	width:1060px;
@@ -23,6 +21,14 @@
 	border: solid 1px grey;
 	width:1060px;
 	height: 31px;
+}
+.foot{
+	background-color: green;
+	border: solid 1px grey;
+	width:1024px;
+	height: 31px;
+	margin-top: 330px;
+	margin-left: 179px;
 }
 .banquan{
 	margin-top: 5px;
@@ -70,4 +76,7 @@
 .col-md-1 a {
 	color: blue;
 	font-size: 18px;
+}
+#change_content{
+overflow-y: 
 }

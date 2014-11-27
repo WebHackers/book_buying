@@ -44,6 +44,21 @@
   	<img src = "/img/精通jquery.jpg" alt = "精通jquery" class = "picclass img-circle">
   	<a href = "third_book.php"  target = "_blank">精通Jquery</a>
   </div>
+
+   <div class="row col-md-12">
+  	<img src = "/img/精通jquery.jpg" alt = "精通jquery" class = "picclass img-circle">
+  	<a href = "third_book.php"  target = "_blank">精通Jquery</a>
+  </div>
+
+   <div class="row col-md-12">
+  	<img src = "/img/精通jquery.jpg" alt = "精通jquery" class = "picclass img-circle">
+  	<a href = "third_book.php"  target = "_blank">精通Jquery</a>
+  </div>
+
+   <div class="row col-md-12">
+  	<img src = "/img/精通jquery.jpg" alt = "精通jquery" class = "picclass img-circle">
+  	<a href = "third_book.php"  target = "_blank">精通Jquery</a>
+  </div>
 </div>
 <script type ="text/javascript">
 

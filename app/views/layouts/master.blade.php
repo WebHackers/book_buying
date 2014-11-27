@@ -42,17 +42,21 @@
     	</div>
 	</div>
 	
-	<div class  =" span12">
+	<div class  =" span12" id = "change_content">
 		 @yield('content')
 	</div>	
 </div>
 </div>
 
 	<footer>
-		<div class ="footer">
+		<!--<div class ="footer">
 			<p class = "banquan">版权所有&copy;2014杭电软件工程创新创业实验班</p>
 		</div>
+		<div class = "row">
+			<div class = "col-md-9 foot">
+				<p class = "banquan">版权所有&copy;2014杭电软件工程创新创业实验班</p>
+			</div>
+		</div>-->
 	</footer>
-
 </body>
 </html>

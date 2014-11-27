@@ -1,10 +1,12 @@
 .main{
-	position: fixed;
+	
 	top: 95px;
 	left: 538px;
     font-size: 20px;
-    width:878px;
-    height:;
+    width:840px;
+    height:500px;
+    overflow-y:auto; 
+    overflow-x:hidden; 
 }
 
 .row a{
