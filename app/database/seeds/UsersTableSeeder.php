@@ -16,12 +16,6 @@ class UsersTableSeeder extends Seeder {
 			'user_rank'=>'图书管理员'
 		));
 
-		User::create(array(
-			'user_id'=>12108327,
-			'user_name'=>'谢俊杰',
-			'password'=>Hash::make('206_12108327'),
-			'user_rank'=>'图书管理员'
-		));
 	}
 
 }
