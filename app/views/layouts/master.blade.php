@@ -18,9 +18,16 @@
 	<caption>
 	<div class = "top row">
 		<div class = "col-md-11 systemname">创新创业实验班购书系统</div>
+
+		@if(Auth::check())
+		<div class = "col-md-1">
+			<p> {{Auth::user()->user_id}}</p>
+		</div>
+		@else
 		<div class = "col-md-1">
 			<a href = "land.php" title = "注销"><b>用户名</b></a>
 		</div>
+		@endif
 	</div>
 	</caption>
 	

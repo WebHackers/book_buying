@@ -3,7 +3,7 @@
 		
 		public function index () {
 
-			if(true)
+			if(Auth::check())
 			{
 				//$books = BookBasic::all();
 				return View::make ('layouts.show_books');
