@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookMessageTable extends Migration {
+class CreateBooklikeTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,11 @@ class CreateBookMessageTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('bookMessage', function(Blueprint $table)
-		{
+		//
+		Schema::create('bookLike', function(Blueprint $table){
 			$table->increments('id'); 
-			$table->timestamps();
-			$table->integer('book_id');
+			$table->integer('book_kind');
 			$table->integer('user_id');
-			$table->string('user_message');
 		});
 	}
 
@@ -29,7 +27,7 @@ class CreateBookMessageTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('bookMessage');
+		//
 	}
 
 }

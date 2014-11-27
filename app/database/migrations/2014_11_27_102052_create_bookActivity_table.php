@@ -18,9 +18,9 @@ class CreateBookActivityTable extends Migration {
 			$table->timestamps();
 			$table->string('act_period');
 			$table->integer('act_budget');
-			$table->integer('act_cost');
+			$table->float('act_cost');
 			$table->integer('act_sum');
-			$table->boolean('act_status');
+			$table->string('act_status');
 			$table->string('act_message');
 		});
 	}
