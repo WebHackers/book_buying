@@ -21,11 +21,11 @@
      <form name = "input" action = "./login"  method = "post" class="form-horizontal formmain" role="form">
   	   <div class="form-group" id = "user">
           <label for="user_id" class="col-sm-4 control-label">用户名</label>
-          <input type="text" class="form-control" id="user_id" placeholder="学号">
+          <input type="text" class="form-control" name='user_id' id="user_id" placeholder="学号">
        </div>
   	   <div class="form-group" id = "pwd">
          <label for="inputPassword3" class="col-sm-4 control-label">密&nbsp;&nbsp;&nbsp;码</label>
-         <input type="password" class="form-control" id="password" placeholder="Password">
+         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
        </div>
 
        <div class="form-group checkbox" id = "autoland">
