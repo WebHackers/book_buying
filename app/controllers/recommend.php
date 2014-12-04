@@ -97,6 +97,7 @@ class Recommend extends BaseController {
 			$bookBasic->favour      = 0;
 			$bookBasic->save();
 
+			$recommend->act_id      = 0;
 			$recommend->user_id     = 0;
 			$recommend->book_id     = $bookBasic->id;
 			$recommend->rec_reason  = $rec_reason;

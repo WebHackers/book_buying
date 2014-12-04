@@ -1,6 +1,6 @@
 <?php
 
-class BookRecommend extends Eloquent {
+class Recommend extends Eloquent {
 
 	protected $table = 'recommend';
 
@@ -13,7 +13,11 @@ class BookRecommend extends Eloquent {
 
     public function basic()
     {
-        return $this->belongsTo('BookBasic');
+        return $this->belongsTo('BookBasic', 'book_kind');
+    }
+
+    public function activity() {
+        return $this->belongsTo('BookActivity', 'act_id');
     }
 
 }

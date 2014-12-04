@@ -18,6 +18,7 @@
 Route::get('/loginPage', 'account@loginPage');
 
 Route::post('/login', 'account@login');
+//Route::post('/login', array('https','account@login'));
 
 Route::post('/logout', 'account@logout');
 
@@ -128,4 +129,8 @@ Route::get('/master', function(){
 	return View::make('layouts.master');
 });
 
+Route::get('something', ['before' => 'force.ssl', function()
+{
+    return "This will be forced SSL";
+}]);
 ?>

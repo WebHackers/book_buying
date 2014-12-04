@@ -13,7 +13,7 @@ class BookMessage extends Eloquent {
 
     public function writeFor()
     {
-        return $this->belongsTo('BookBasic');
+        return $this->belongsTo('BookBasic', 'book_kind');
     }
 
 }
