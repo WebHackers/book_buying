@@ -15,7 +15,7 @@ class CreateBookBasicTable extends Migration {
 		Schema::create('bookBasic', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			//$table->timestamps();
 			$table->string('book_isbn');
 			//$table->integer('act_id');
 			$table->string('book_name');

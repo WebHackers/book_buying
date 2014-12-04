@@ -85,7 +85,7 @@ Route::post('/message/update', 'message@update');
 
 Route::get('/recommend', 'recommend@index');
 
-Route::get('/recommend/query', 'recommend@query');
+Route::post('/recommend/query', 'recommend@query');
 
 Route::post('/recommend/update', 'recommend@update');
 

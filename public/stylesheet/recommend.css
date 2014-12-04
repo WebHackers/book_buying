@@ -1,0 +1,32 @@
+
+#button {
+	margin: 30px 0 0 0;
+	padding: 50px;
+}
+
+#query {
+	display: inline-block;
+	margin: 0;
+}
+
+#pic {
+	display:none;
+}
+
+#pic_board {
+	padding-top:100px;
+}
+
+#submit_btn {
+	float:right;margin-right:10%;
+}
+
+#top_form {
+	display: inline-block;
+	margin:0 0 20px 0;
+}
+
+a[id^='link'] {
+	margin: 5px;
+	background-color: white;
+}
