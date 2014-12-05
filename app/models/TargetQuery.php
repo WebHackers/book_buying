@@ -1,4 +1,4 @@
-<?
+<?php
 //-------------------- use simple_html_dom --------------------
 include_once('simple_html_dom.php');
 
@@ -11,7 +11,8 @@ class TargetQuery {
     $book = [];
     // search book_name
     foreach ($html->find('div[class=pro_book] h1') as $post) {
-      $book['book_name'] = $this->charsetReplace($post->innertext);
+      $name = $this->charsetReplace($post->innertext);
+      $book['book_name'] = preg_replace('/\(  [^\)]+?  \)/x', '', $name);
     }
 
     // search book_pic
@@ -49,6 +50,9 @@ class TargetQuery {
             $details = explode('：', $this->charsetReplace($post->innertext));
             $book['ISBN'] = $details[1];
             break;
+          case '出版社':
+            $details = explode('：', $this->charsetReplace($post->innertext));
+            $book['book_press'] = $details[1];
         }
     }
 
@@ -74,7 +78,8 @@ class TargetQuery {
     foreach ($html->find('div[class=show_info] h1') as $h1) {
       $bookTitleWithSpan = $this->charsetReplace($h1->innertext);
       foreach ($h1->find('span[class=head_title_name]') as $span) {
-        $book['book_name'] = str_replace($this->charsetReplace($span->innertext), '', $bookTitleWithSpan);
+        $name = str_replace($this->charsetReplace($span->innertext), '', $bookTitleWithSpan);
+        $book['book_name'] = preg_replace('/\(  [^\)]+?  \)/x', '', $name);
       }
     }
 
@@ -127,8 +132,11 @@ class TargetQuery {
         case '出版时间':
           $book['book_publish'] = $bookRight[$j];
           break;
-        case 'ISBN':
+        case 'ＩＳＢＮ':
           $book['ISBN'] = $bookRight[$j];
+          break;
+        case '出版社':
+          $book['book_press'] = $bookRight[$j];
           break;
       }
       
@@ -171,4 +179,3 @@ class TargetQuery {
     return strtr($str, $arr);
   }
 }
-
