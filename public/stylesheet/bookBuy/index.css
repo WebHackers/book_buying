@@ -1,0 +1,41 @@
+
+.list-board {
+	padding: 0 !important;
+}
+
+.list-li {
+	margin: 10px 0 10px 0 !important;
+	padding: 0 !important;
+}
+
+.list-link {
+	padding: 0 !important;
+}
+
+.list-img {
+	height: 90px !important;
+}
+
+.list-info {
+	padding: 0 !important;
+	height: 100px;
+}
+
+.list-item {
+	margin: 5px 0 5px 0 !important;
+}
+
+.list-content {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+a:hover {
+	color: #666 !important;
+}
+
+.list-btn {
+	margin: 0 0 0 0 !important;
+}

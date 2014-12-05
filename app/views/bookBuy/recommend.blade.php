@@ -3,9 +3,11 @@
 <head>
 	<title>图书推荐</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="stylesheet/recommend.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheet/bookBuy/public.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheet/bookBuy/recommend.css"/>
 	<link rel="stylesheet" type="text/css" href="framework/uikit/css/uikit.min.css"/>
 	<script type="text/javascript" src="javascript/jquery2.1.0.js"></script>
+	<script type="text/javascript" src="javascript/bookBuy/recommend.js"></script>
 	<script type="text/javascript" src="framework/uikit/js/uikit.min.js"></script> 
 
 </head>
@@ -117,49 +119,5 @@
   	<img id="photo" src="">
   </div>
 
-<script type="text/javascript">
-	if($('#pic_link').val()!='')
-	{
-		$('#photo').attr('src', $('#pic_link').val());
-	}
-	$('#query').click(function() {
-		var target = $('#target').val();
-		if(target == '')
-		{
-			alert('Please input a target link');
-		}
-		else
-		{
-			$(this).html('爬虫爬呀爬～');
-			$.post(
-			'/recommend/query',
-			{
-				target: target
-			},
-			function(data, status) {//alert(data);
-				if(data==false||data['book_name']==undefined)
-				{
-					alert('Target URL is wrong');
-				}
-				else
-				{
-					$('#photo')		.attr('src', data['book_pic']);
-					$('#name')		.val(data['book_name']);
-					$('#author')	.val(data['book_author']);
-					$('#time')		.val(data['book_pub']);
-					$('#press')		.val(data['book_press']);
-					$('#price')		.val(data['book_price']);
-					$('#isbn')		.val(data['isbn']);
-					$('#buy_link').val(data['buy_link']);
-					$('#pic_link').val(data['book_pic']);
-					$('#info')		.val(data['book_info']);
-					
-				}
-				$('#query').html('戳我自动填充~');
-			});
-		}
-	});
-
-</script>
 </body>
 </html>

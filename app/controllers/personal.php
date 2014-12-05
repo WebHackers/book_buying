@@ -4,7 +4,7 @@ class Personal extends BaseController {
 
 	public function index()
 	{
-		return 'hello_personal';
+		return View::make('bookBuy.personal');
 	}
 
 	public function update()

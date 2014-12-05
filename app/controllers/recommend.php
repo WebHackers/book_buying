@@ -6,7 +6,7 @@ class Recommend extends BaseController {
 	{
 		if(true)
 		{
-			return View::make('layouts.book_recommend');
+			return View::make('bookBuy.recommend');
 		}
 		else
 		{
@@ -44,7 +44,7 @@ class Recommend extends BaseController {
 				}
 			}
 			$arr['buy_link'] = $target;
-			print_r($arr);
+			return $arr;
 		}
 		else {
 			return Redirect::to('recommend');
