@@ -12,7 +12,7 @@ class TargetQuery {
     // search book_name
     foreach ($html->find('div[class=pro_book] h1') as $post) {
       $name = $this->charsetReplace($post->innertext);
-      $book['book_name'] = preg_replace('/\(  [^\)]+?  \)/x', '', $name);
+      $book['book_name'] = preg_replace('/\(  .+?  \)/x', '', $name);
     }
 
     // search book_pic
@@ -79,7 +79,7 @@ class TargetQuery {
       $bookTitleWithSpan = $this->charsetReplace($h1->innertext);
       foreach ($h1->find('span[class=head_title_name]') as $span) {
         $name = str_replace($this->charsetReplace($span->innertext), '', $bookTitleWithSpan);
-        $book['book_name'] = preg_replace('/\(  [^\)]+?  \)/x', '', $name);
+        $book['book_name'] = preg_replace('/\（  .+?  \）/x', '', $name);
       }
     }
 
