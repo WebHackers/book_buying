@@ -4,7 +4,7 @@ class Admin extends BaseController {
 
 	public function index()
 	{
-		return 'hello_admin';
+		return View::make('bookBuy.admin');
 	}
 
 	public function toggle()

@@ -21,6 +21,7 @@ class CreateRecommendTable extends Migration {
 			//$table->integer('book_id');
 			$table->string('rec_reason');
 			$table->string('rec_type');
+			$table->string('status');
 			$table->text('buy_link');
 			$table->integer('act_id');
 		});

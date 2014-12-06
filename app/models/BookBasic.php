@@ -2,6 +2,8 @@
 
 class BookBasic extends Eloquent {
 
+    public $timestamps = false;
+
 	protected $table = 'bookBasic';
 
 	protected $guarded = array('id');

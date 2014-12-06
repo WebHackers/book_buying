@@ -1,0 +1,27 @@
+
+#query {
+	display: inline-block;
+	margin: 0;
+}
+
+#pic {
+	display:none;
+}
+
+#pic_board {
+	padding-top:100px;
+}
+
+#submit_btn {
+	float:right;margin-right:10%;
+}
+
+#top_form {
+	display: inline-block;
+	margin:0 0 20px 0;
+}
+
+#photo {
+	max-width:150px;
+	height:auto;
+}
