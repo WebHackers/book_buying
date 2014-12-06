@@ -2,19 +2,22 @@
 
 class UsersTableSeeder extends Seeder {
 	public function run() {
-		User::create(array(
-			'user_id'=>12108209,
-			'user_name'=>'陈露耿',
-			'password'=>Hash::make('206_12108209'),
-			'user_rank'=>'普通用户'
-		));
+	    $faker = Faker::create();
 
-		User::create(array(
-			'user_id'=>12108327,
-			'user_name'=>'谢俊杰',
-			'password'=>Hash::make('206_12108327'),
-			'user_rank'=>'图书管理员'
-		));
+        foreach(range(1, 50) as $index)
+        {
+            $user = new User;
+            $user->user_name     = $faker->userName()  . $index;
+            $user->password     = 'admin';
+            $user->user_id= ;
+            $user->user_rank = 'admin';
+
+            if(! $user->save()) {
+              Log::info('Unable to create user '.$user->username, (array)$user->errors());
+            } else {
+              Log::info('Created user "'.$user->username.'" <'.$user->email.'>');
+            }
+        }
 
 	}
 
