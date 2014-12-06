@@ -3,12 +3,12 @@
 <head>
 	<title>图书推荐</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="stylesheet/bookBuy/public.css"/>
-	<link rel="stylesheet" type="text/css" href="stylesheet/bookBuy/recommend.css"/>
-	<link rel="stylesheet" type="text/css" href="framework/uikit/css/uikit.min.css"/>
-	<script type="text/javascript" src="javascript/jquery2.1.0.js"></script>
-	<script type="text/javascript" src="javascript/bookBuy/recommend.js"></script>
-	<script type="text/javascript" src="framework/uikit/js/uikit.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/bookBuy/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bookBuy/recommend.css"/>
+	<link rel="stylesheet" type="text/css" href="frame/uikit/css/uikit.min.css"/>
+	<script type="text/javascript" src="js/jquery2.1.0.js"></script>
+	<script type="text/javascript" src="js/bookBuy/recommend.js"></script>
+	<script type="text/javascript" src="frame/uikit/js/uikit.min.js"></script> 
 
 </head>
 

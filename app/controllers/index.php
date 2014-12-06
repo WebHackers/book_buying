@@ -14,10 +14,12 @@
 				'favour' => '99'
 			);
 
+			$list = array($book,$book,$book,$book,$book,$book,$book,$book);
+
 			if(true)
 			{
 				//$books = BookBasic::all();
-				return View::make ('bookBuy.index', $book);
+				return View::make ('bookBuy.index', array('list' => $list));
 			}
 			else
 			{
