@@ -20,7 +20,7 @@ Route::get('/loginPage', 'account@loginPage');
 Route::post('/login', 'account@login');
 //Route::post('/login', array('https','account@login'));
 
-Route::post('/logout', 'account@logout');
+Route::get('/logout', 'account@logout');
 
 /**
  *|--------------------------------------------------------------------------
@@ -32,16 +32,11 @@ Route::post('/logout', 'account@logout');
  *| '/like' --- 前端->发起url请求，参数'bookId=**'
  *|         --- 后端->相应书目like字段值加一,成功返回true,否则false
  *|
- *| '/dislike' --- 前端->发起url请求，参数'bookId=**'
- *|            --- 后端->相应书目dislike字段值加一,成功返回true,否则false
- *|
  */
 
 Route::get('/', 'index@index');
 
-Route::get('/like', 'index@like');
-
-Route::get('/dislike', 'index@dislike');
+Route::post('/favour', 'index@favour');
 
 /**
  *|--------------------------------------------------------------------------
@@ -124,6 +119,10 @@ Route::get('/admin', 'admin@index');
 Route::post('/admin/toggle', 'admin@toggle');
 
 Route::post('/admin/update', 'admin@update');
+
+Route::get('/error', function() {
+	return View::make('bookBuy.error', array('message' => Session::get('message')));
+});
 
 Route::get('/master', function(){
 	return View::make('layouts.master');

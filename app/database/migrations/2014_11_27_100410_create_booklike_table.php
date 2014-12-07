@@ -14,7 +14,7 @@ class CreateBooklikeTable extends Migration {
 	{
 		//
 		Schema::create('bookLike', function(Blueprint $table){
-			$table->increments('id'); 
+			$table->increments('id');
 			$table->integer('book_kind');
 			$table->integer('user_id');
 		});

@@ -3,11 +3,11 @@
 <head>
 	<title>登录</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type = "text/javascript" src = "/bootstrap/js/bootstrap.min.js"></script>
-	<script type = "text/javascript" src = "/bootstrap/js/jquery-1.11.1.min.js"></script>  
-	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap.min.css">
-	<link rel = "stylesheet" type = "text/css" href = "/bootstrap/css/bootstrap-theme.min.css">
-	<link rel = "stylesheet" type = "text/css" href = "/css/land.css">
+	<script type = "text/javascript" src = "/r3/js/bootstrap.min.js"></script>
+	<script type = "text/javascript" src = "/r3/js/jquery-1.11.1.min.js"></script>  
+	<link rel = "stylesheet" type = "text/css" href = "/r3/css/bootstrap.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "/r3/css/bootstrap-theme.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "/r2/land.css">
 
 </head>
 <body class = "body">
@@ -24,7 +24,7 @@
           <input type="text" class="form-control" name='user_id' id="user_id" placeholder="学号">
        </div>
   	   <div class="form-group" id = "pwd">
-         <label for="inputPassword3" class="col-sm-4 control-label">密&nbsp;&nbsp;&nbsp;码</label>
+         <label for="password" class="col-sm-4 control-label">密&nbsp;&nbsp;&nbsp;码</label>
          <input type="password" class="form-control" name="password" id="password" placeholder="Password">
        </div>
 
@@ -35,19 +35,13 @@
        <br>
        <div class="form-group checkbox" id = "button1">
        		<div class="col-md-6">
-       			<button type = "submit"  name = "submit" class = "btn btn-primary ">登录</button>
+       			<button type = "submit" class = "btn btn-primary ">登录</button>
        			&emsp; &emsp; &emsp;
        			<button type = "reset" name = "reset" class = "btn btn-primary ">重置</button>
        		 
        		</div>
        </div>
     </form>
-  
- 	 <div class = "col-md-12 roll">
-			<marquee scrollAmount = "5" height = "55"  width = "980" scolldelay ="1000"
-			onmouseover = stop() onmouseout = start()><p class = "posterfont">
-			创新创业，与你同行</p></marquee>
-	</div>
 
 </div>
 </body>

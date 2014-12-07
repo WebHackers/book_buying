@@ -1,9 +1,19 @@
+
+#container {
+	padding: 10px 0 0 0;
+	min-width: 1200px;
+}
+
 #button {
-	margin: 30px 0 0 0;
-	padding: 50px;
+	position: fixed;
+	top: 100px;
+	left: 150px;
+	margin: 0;
+	padding: 0;
 }
 
 a[id^='link'] {
 	margin: 5px;
+	width: 100px;
 	background-color: white;
 }

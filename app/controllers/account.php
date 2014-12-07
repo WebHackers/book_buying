@@ -9,7 +9,7 @@ class Account extends BaseController {
 
 	public function login()	
 	{
-		if(Auth::attempt(Input::only('user_id', 'password'))) {  
+		if(Auth::attempt(Input::only('user_id', 'password'))) {
 			return Redirect::intended('/');  
 		} else {
 			return Redirect::back()  
@@ -20,7 +20,8 @@ class Account extends BaseController {
 
 	public function logout()
 	{
-		return 'logout';
+		Auth::logout();
+		return Redirect::to('loginPage');
 	}
 
 }

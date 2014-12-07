@@ -2,9 +2,11 @@
 	/**
 	* 
 	*/
-	class BookList extends Eloquent
+	class BookLike extends Eloquent
 	{
-		protected $table = 'bookList';
+		public $timestamps = false;
+		
+		protected $table = 'bookLike';
 
 		protected $guarded = array('id');
 		
@@ -13,7 +15,7 @@
 		}
 
 		public function book() {
-			return $this->belongsTo('BookBasic', 'book_kind')
+			return $this->belongsTo('BookBasic', 'book_kind');
 		}
 	}
 

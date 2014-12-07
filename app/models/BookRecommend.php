@@ -1,6 +1,6 @@
 <?php
 
-class Recommend extends Eloquent {
+class BookRecommend extends Eloquent {
 
 	protected $table = 'recommend';
 

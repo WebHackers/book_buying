@@ -10,7 +10,7 @@ class BookBasic extends Eloquent {
  
     public function recomInfo()
     {
-        return $this->hasOne('Recommend', 'book_kind');
+        return $this->hasOne('BookRecommend', 'book_kind');
     }
 
     public function message()
@@ -22,7 +22,7 @@ class BookBasic extends Eloquent {
         return $this->hasMany('BookLike', 'book_kind');
     }
 
-    public function list() {
+    public function bookList() {
         return $this->hasMany('BookList', 'book_kind');
     }
 

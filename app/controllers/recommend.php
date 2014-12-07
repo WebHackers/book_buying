@@ -4,7 +4,7 @@ class Recommend extends BaseController {
 
 	public function index()
 	{
-		if(true)
+		if(Auth::check())
 		{
 			return View::make('bookBuy.recommend');
 		}
@@ -16,6 +16,7 @@ class Recommend extends BaseController {
 
 	public function query()
 	{
+		if(!Auth::check()) {return;}
 		if(Input::has('target')) {
 			$target = Input::get('target');
 			
@@ -26,7 +27,7 @@ class Recommend extends BaseController {
 					$arr = $book->chinapub($target);
 				}
 				catch(Exception $e) {
-					return false;
+					return 'false';
 				}
 			}
 			else {
@@ -36,11 +37,11 @@ class Recommend extends BaseController {
 						$arr = $book->dangdang($target);
 					}
 					catch(Exception $e) {
-						return false;
+						return 'false';
 					}
 				}
 				else {
-					return false;
+					return 'false';
 				}
 			}
 			$arr['buy_link'] = $target;
@@ -53,6 +54,7 @@ class Recommend extends BaseController {
 
 	public function update()
 	{
+		if(!Auth::check()) {return;}
 		$price = str_replace('￥', '', Input::get('price'));
 		$book_price  = $price;
 		$buy_link    = Input::get('buy_link');
@@ -67,6 +69,11 @@ class Recommend extends BaseController {
 		$rec_reason  = Input::get('rec_reason');
 		$rec_type    = Input::get('rec_type');
 
+		$num = count(BookBasic::where('book_isbn', '=', $book_isbn)->get());
+		if($num!=0) {
+			return Redirect::to('error')->with('message', '书籍已被推荐，换一本吧');
+		}
+		
 		if($book_isbn==''||
 			$book_name==''||
 			$book_author==''||
@@ -99,7 +106,7 @@ class Recommend extends BaseController {
 
 			$recommend->act_id      = 0;
 			$recommend->user_id     = 0;
-			$recommend->book_id     = $bookBasic->id;
+			$recommend->book_kind   = $bookBasic->id;
 			$recommend->rec_reason  = $rec_reason;
 			$recommend->rec_type    = $rec_type;
 			$recommend->buy_link    = $buy_link;

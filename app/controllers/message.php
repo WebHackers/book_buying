@@ -4,8 +4,8 @@ class Message extends BaseController {
 
 	public function index()
 	{
-		/*return 'hello_message';*/
-		return View::make('layouts.first_book');
+		return Input::get('id');
+		//return View::make('');
 	}
 
 	public function update()

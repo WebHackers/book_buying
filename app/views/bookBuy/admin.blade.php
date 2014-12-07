@@ -12,21 +12,23 @@
 
 </head>
 
-<body class="uk-grid" style="padding: 30px 0 0 0">
+<body class="uk-grid" id="container">
+
+  <div class="uk-width-1-10" id="button">
+    <a href="/" class="uk-button uk-button-large" type="button" id="link-1">推荐列表</a>
+    <a href="/recommend" class="uk-button uk-button-large" type="button" id="link-2">我要推荐</a>
+    <a href="/personal" class="uk-button uk-button-large" type="button" id="link-3">个人中心</a>
+    <a href="/admin" class="uk-button uk-button-large uk-active" type="button" id="link-4">购书管理</a>
+  </div>
 
   <div class="uk-width-1-10"><br></div>
-	<div class="uk-width-2-10" id="button">
-		<a href="/" class="uk-button uk-button-large" type="button" id="link-1">推荐列表</a>
-		<a href="/recommend" class="uk-button uk-button-large" type="button" id="link-2">我要推荐</a>
-		<a href="/personal" class="uk-button uk-button-large" type="button" id="link-3">个人中心</a>
-		<a href="/admin" class="uk-button uk-button-large uk-active" type="button" id="link-4">购书管理</a>
-	</div>
-  <div class="uk-width-6-10">
+	<div class="uk-width-2-10"><br></div>
+  <div class="uk-width-6-10"><br>
 
   </div>
 		
-  <div class="uk-width-1-10" id="">
-  	
+  <div class="uk-width-1-10">
+  	<a class="uk-button uk-button-large" href="./logout" style="background-color:#fff;">Logout</a>
   </div>
 
 </body>

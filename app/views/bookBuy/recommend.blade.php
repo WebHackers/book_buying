@@ -12,15 +12,17 @@
 
 </head>
 
-<body class="uk-grid" style="padding: 30px 0 0 0">
+<body class="uk-grid" id="container">
+
+  <div class="uk-width-1-10" id="button">
+    <a href="/" class="uk-button uk-button-large" type="button" id="link-1">推荐列表</a>
+    <a href="/recommend" class="uk-button uk-button-large uk-active" type="button" id="link-2">我要推荐</a>
+    <a href="/personal" class="uk-button uk-button-large" type="button" id="link-3">个人中心</a>
+    <a href="/admin" class="uk-button uk-button-large" type="button" id="link-4">购书管理</a>
+  </div>
 
   <div class="uk-width-1-10"><br></div>
-	<div class="uk-width-2-10" id="button">
-		<a href="/" class="uk-button uk-button-large" type="button" id="link-1">推荐列表</a>
-		<a href="/recommend" class="uk-button uk-button-large uk-active" type="button" id="link-2">我要推荐</a>
-		<a href="/personal" class="uk-button uk-button-large" type="button" id="link-3">个人中心</a>
-		<a href="/admin" class="uk-button uk-button-large" type="button" id="link-4">购书管理</a>
-	</div>
+	<div class="uk-width-2-10"><br></div>
 	<div class="uk-width-4-10">
 		<form class="uk-form uk-width-7-10" id="top_form">
 				<input class="uk-width-1-1" id="target" type="text" placeholder="Enter a URL">
@@ -115,9 +117,11 @@
 		</form>
 
 	</div>
-  <div class="uk-width-3-10" id="pic_board">
+  <div class="uk-width-2-10" id="pic_board">
   	<img id="photo" src="">
   </div>
-
+  <div class="uk-width-1-10">
+  	<a class="uk-button uk-button-large" href="./logout" style="background-color:#fff;">Logout</a>
+  </div>
 </body>
 </html>
