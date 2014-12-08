@@ -29,9 +29,10 @@
        </div>
 
        <div class="form-group checkbox" id = "autoland">
-       		<div class="col-md-6"><input type = "checkbox">记住密码 &emsp; &emsp; 
-       		 <input type = "checkbox">自动登录 </div>
-       </div>
+       		<div class="col-md-6">
+            <input type = "checkbox" name="remember">记住我 
+          </div>
+        </div>
        <br>
        <div class="form-group checkbox" id = "button1">
        		<div class="col-md-6">

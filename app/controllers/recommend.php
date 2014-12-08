@@ -6,7 +6,7 @@ class Recommend extends BaseController {
 	{
 		if(Auth::check())
 		{
-			return View::make('bookBuy.recommend');
+			return View::make('bookBuy.recommend', array('user' => Auth::user()->user_name));
 		}
 		else
 		{
@@ -105,7 +105,7 @@ class Recommend extends BaseController {
 			$bookBasic->save();
 
 			$recommend->act_id      = 0;
-			$recommend->user_id     = 0;
+			$recommend->user_id     = Auth::user()->id;
 			$recommend->book_kind   = $bookBasic->id;
 			$recommend->rec_reason  = $rec_reason;
 			$recommend->rec_type    = $rec_type;
@@ -114,11 +114,8 @@ class Recommend extends BaseController {
 			$recommend->save();
 
 			return Redirect::to('personal');
-
 		}
-
 	}
-
 }
 
 ?>

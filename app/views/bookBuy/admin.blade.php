@@ -12,23 +12,41 @@
 
 </head>
 
-<body class="uk-grid" id="container">
+<body id="container">
+  <nav class="uk-navbar uk-grid" id="menu">
+    <div class="uk-width-1-6"><br></div>
+    <div class="uk-width-4-6" id="menu-item">
+      <ul class="uk-navbar-nav uk-container uk-container-center">
+          <li>
+            <a href="/">推荐列表</a>
+          </li>
+          <li>
+            <a href="/recommend">我要推荐</a>
+          </li>
+          <li>
+            <a href="/personal">个人中心</a>
+          </li>
+          <li class="uk-active">
+            <a href="/admin">购书管理</a>
+          </li>
+      </ul>
 
-  <div class="uk-width-1-10" id="button">
-    <a href="/" class="uk-button uk-button-large" type="button" id="link-1">推荐列表</a>
-    <a href="/recommend" class="uk-button uk-button-large" type="button" id="link-2">我要推荐</a>
-    <a href="/personal" class="uk-button uk-button-large" type="button" id="link-3">个人中心</a>
-    <a href="/admin" class="uk-button uk-button-large uk-active" type="button" id="link-4">购书管理</a>
-  </div>
+      <div class="uk-navbar-flip" id="logout-btn">
+        <ul class="uk-navbar-nav">
+          <li><a href="#">{{$user}}</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="uk-width-1-6"><br></div>
+  </nav>
 
-  <div class="uk-width-1-10"><br></div>
-	<div class="uk-width-2-10"><br></div>
-  <div class="uk-width-6-10"><br>
+  <div class="uk-grid" id="content">
+    <div class="uk-width-1-6"><br></div>
+    <div class="uk-width-4-6" id="main-content"><br>
 
-  </div>
-		
-  <div class="uk-width-1-10">
-  	<a class="uk-button uk-button-large" href="./logout" style="background-color:#fff;">Logout</a>
+    </div>
+    <div class="uk-width-1-6"><br></div>
   </div>
 
 </body>
