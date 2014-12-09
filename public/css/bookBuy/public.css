@@ -1,6 +1,6 @@
 
 #container {
-	min-width: 1200px;
+	min-width: 900px;
 }
 
 #menu {
@@ -46,6 +46,10 @@
 
 .list-item {
 	margin: 5px 0 5px 0 !important;
+}
+
+.list-item-info {
+	margin: 10px 0 10px 0 !important;
 }
 
 .list-content {

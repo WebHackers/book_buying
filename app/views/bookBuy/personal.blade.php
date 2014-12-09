@@ -54,30 +54,31 @@
 
           <div class="uk-width-9-10 uk-article list-info">
             <div class="uk-grid list-item">
-              <a class="uk-article-lead uk-width-3-10 list-content" target="_blank" href="message?id={{$book['basic']->id}}">{{$book['basic']->book_name}}</a>
-              <span class="uk-article-meta uk-width-4-10 list-content">{{$book['basic']->book_author}}</span>
+              <a class="uk-article-lead uk-width-4-10 list-content" target="_blank" href="info?id={{$book['basic']->id}}">{{$book['basic']->book_name}}</a>
+              <span class="uk-article-meta uk-width-3-10 list-content">{{$book['basic']->book_author}}</span>
               <span class="uk-width-2-10 list-content">价格：{{$book['basic']->book_price}}</span>
+              <div class="uk-width-1-10 list-badge"><div class="uk-badge">{{$book['status']}}</div></div>
+            </div>
+
+            <div class="uk-grid list-item">
+              <span class="uk-article-meta uk-width-4-10 list-content">推荐类型：{{$book['rec']->rec_type}}</span>
+              <span class="uk-article-meta uk-width-3-10 list-content">推荐时间：{{explode(' ',$book['rec']->created_at)[0]}}</span>
+              <div class="uk-width-2-10 list-content">
+                <button class="uk-button {{$book['btn']}} uk-button-mini list-btn" type="button" id="like_{{$book['basic']->id}}">
+                  <i class="uk-icon-thumbs-o-up"></i> {{$book['tip']}} {{$book['basic']->favour}}
+                </button>
+              </div>
               <div class="uk-width-1-10 list-close">
                 <button class="uk-close" id="del_{{$book['rec']->book_kind}}"></button>
               </div>
             </div>
 
             <div class="uk-grid list-item">
-              <span class="uk-article-meta uk-width-3-10 list-content">推荐类型：{{$book['rec']->rec_type}}</span>
-              <span class="uk-article-meta uk-width-4-10 list-content">推荐时间：{{$book['rec']->created_at}}</span>
-              <div class="uk-width-2-10 list-content">
-                <button class="uk-button {{$book['btn']}} uk-button-mini list-btn" type="button" id="like_{{$book['basic']->id}}">
-                  <i class="uk-icon-thumbs-o-up"></i> {{$book['tip']}} {{$book['basic']->favour}}
-                </button>
-              </div>
+              <span class="uk-article-meta uk-width-8-10 list-content">推荐理由：{{$book['rec']->rec_reason}}</span>
             </div>
 
             <div class="uk-grid list-item">
-              <span class="uk-article-meta uk-width-9-10 list-content">简介：{{$book['basic']->book_info}}</span>
-            </div>
-
-            <div class="uk-grid list-item">
-              <span class="uk-article-meta uk-width-9-10 list-content">推荐理由：{{$book['rec']->rec_reason}}</span>
+              <span class="uk-article-meta uk-width-8-10 list-content">简介：{{$book['basic']->book_info}}</span>
             </div>
           </div>
         </li>

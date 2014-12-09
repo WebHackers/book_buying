@@ -18,11 +18,17 @@ class Personal extends BaseController {
 				}
 				else {$btn = '';$tip = '已赞';}
 
+				if($rec->status=='已购买') {
+					$status = $rec->status;
+				}
+				else {$status = '';}
+
 				$arr = array(
 					'rec' => $rec,
 					'basic' => $basic,
 					'btn' => $btn,
-					'tip' => $tip
+					'tip' => $tip,
+					'status' => $status
 				);
 				$list[] = $arr;
 			}
@@ -36,10 +42,13 @@ class Personal extends BaseController {
 	public function update()
 	{
 		if(!Auth::check()) {return;}
-		$rec = BookRecommend::where('book_kind', '=', Input::get('kind'))->get();
-		if(count($rec)>0) $rec[0]->delete();
+
 		$basic = BookBasic::find(Input::get('kind'));
 		if(count($basic)>0) $basic->delete();
+		$rec = BookRecommend::where('book_kind', '=', Input::get('kind'))->delete();
+		$like = BookLike::where('book_kind', '=', Input::get('kind'))->delete();
+		$msg = BookMessage::where('book_kind', '=', Input::get('kind'))->delete();
+
 		return 'removed';
 	}
 }

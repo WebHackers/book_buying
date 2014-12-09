@@ -60,9 +60,9 @@ Route::get('/history', 'history@index');
  *|                   --- 后端->插入留言数据，成功则返回true，否则false
  */
 
-Route::get('/message', 'message@index');
+Route::get('/info', 'info@index');
 
-Route::post('/message/update', 'message@update');
+Route::post('/info/update', 'info@update');
 
 /**
  *|--------------------------------------------------------------------------
