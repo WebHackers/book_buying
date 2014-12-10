@@ -1,0 +1,30 @@
+
+.msg-list {
+	margin: 50px 0 50px 0;
+}
+
+.msg-head {
+	margin: 0 0 0 0 !important;
+}
+
+.msg-name {
+	float: left;
+}
+
+.msg-time {
+	float: right;
+}
+
+.msg-body {
+	padding: 0 0 0 100px;
+	text-indent: 2em;
+}
+
+#inputarea {
+	width: 100%;
+}
+
+#submit {
+	float: right;
+	margin: 10px 0 100px 0;
+}
