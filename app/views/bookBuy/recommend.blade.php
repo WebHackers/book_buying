@@ -26,14 +26,16 @@
           <li>
             <a href="/personal">个人中心</a>
           </li>
+          @if ($user->user_rank=='购书管理')
           <li>
             <a href="/admin">购书管理</a>
           </li>
+          @endif
       </ul>
 
       <div class="uk-navbar-flip" id="logout-btn">
         <ul class="uk-navbar-nav">
-          <li><a href="#">{{$user}}</a></li>
+          <li><a href="#">{{$user->user_name}}</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>
@@ -99,20 +101,19 @@
 				    <label class="uk-form-label" for="type">书籍类别</label>
 						<select id="type" name="type">
 							<option></option>
-							<option>C++</option>
+							<option>C,C++</option>
 							<option>Java</option>
-							<option>Javascript</option>
-							<option>PHP</option>
-							<option>Web小技术</option>
-							<option>UML</option>
-							<option>移动端</option>
+							<option>JS</option>
 							<option>前端</option>
-							<option>小众后端</option>
-							<option>操作系统</option>
-							<option>数据挖掘</option>
+							<option>后端</option>
+							<option>PC端</option>
+							<option>移动端</option>
 							<option>数据库</option>
+							<option>大数据</option>
+							<option>人工智能</option>
+							<option>操作系统</option>
 							<option>思维锻炼</option>
-							<option>交互</option>
+							<option>人机交互</option>
 							<option>其他</option>
 						</select>
 					</div>

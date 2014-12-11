@@ -5,8 +5,8 @@ class Admin extends BaseController {
 	public function index()
 	{
 		if(Auth::check()) {
-			if(Auth::user()->user_rank=='admin') {
-				return View::make('bookBuy.admin', array('user' => Auth::user()->user_name));
+			if(Auth::user()->user_rank=='购书管理') {
+				return View::make('bookBuy.admin', array('user' => Auth::user()));
 			}
 			else {
 				return Redirect::to('error')->with('message', 'You are not the Administrator');

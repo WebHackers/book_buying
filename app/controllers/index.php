@@ -8,6 +8,14 @@
 				$list = array();
 				$rec_list = BookRecommend::all();
 				foreach ($rec_list as $rec) {
+					$user = User::find($rec->user_id);
+					if(count($user)==0) {
+						$user_name = '未知';
+					}
+					else {
+						$user_name = $user->user_name;
+					}
+
 					$basic = BookBasic::find($rec->book_kind);
 
 					$isfavour = BookLike::where('user_id', '=', Auth::user()->id)
@@ -26,13 +34,14 @@
 					$arr = array(
 						'rec' => $rec,
 						'basic' => $basic,
+						'name' => $user_name,
 						'btn' => $btn,
 						'tip' => $tip,
 						'status' => $status
 					);
 					$list[] = $arr;
 				}
-				return View::make ('bookBuy.index', array('list' => $list, 'user' => Auth::user()->user_name));
+				return View::make ('bookBuy.index', array('list' => $list, 'user' => Auth::user()));
 			}
 			else
 			{

@@ -26,14 +26,16 @@
           <li>
             <a href="/personal">个人中心</a>
           </li>
+          @if ($user->user_rank=='购书管理')
           <li>
             <a href="/admin">购书管理</a>
           </li>
+          @endif
       </ul>
 
       <div class="uk-navbar-flip" id="logout-btn">
         <ul class="uk-navbar-nav">
-          <li><a href="#">{{$user}}</a></li>
+          <li><a href="#">{{$user->user_name}}</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>
@@ -53,14 +55,14 @@
 
     			<div class="uk-width-9-10 uk-article list-info">
     				<div class="uk-grid list-item">
-    					<a class="uk-article-lead uk-width-4-10 list-content" target="_blank" href="info?id={{$book['rec']->book_kind}}">{{$book['basic']->book_name}}</a>
+    					<a class="uk-article-lead uk-width-4-10 list-content" href="info?id={{$book['rec']->book_kind}}">{{$book['basic']->book_name}}</a>
     					<span class="uk-article-meta uk-width-3-10 list-content">{{$book['basic']->book_author}}</span>
     					<span class="uk-width-2-10 list-content">价格：{{$book['basic']->book_price}}</span>
               <div class="uk-width-1-10 list-badge"><div class="uk-badge">{{$book['status']}}</div></div>
     				</div>
 
     				<div class="uk-grid list-item">
-    					<span class="uk-article-meta uk-width-4-10 list-content">推荐类型：{{$book['rec']->rec_type}}</span>
+    					<span class="uk-article-meta uk-width-4-10 list-content">推荐人：{{$book['name']}}</span>
     					<span class="uk-article-meta uk-width-3-10 list-content">推荐时间：{{explode(' ',$book['rec']->created_at)[0]}}</span>
     					<div class="uk-width-2-10 list-content">
     						<button class="uk-button {{$book['btn']}} uk-button-mini list-btn" type="button" id="like_{{$book['basic']->id}}">

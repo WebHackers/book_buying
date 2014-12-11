@@ -62,7 +62,9 @@ Route::get('/history', 'history@index');
 
 Route::get('/info', 'info@index');
 
-Route::post('/info/update', 'info@update');
+Route::post('/info/addMsg', 'info@addMsg');
+
+Route::post('/info/addLink', 'info@addLink');
 
 /**
  *|--------------------------------------------------------------------------

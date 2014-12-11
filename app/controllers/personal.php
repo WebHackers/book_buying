@@ -32,7 +32,7 @@ class Personal extends BaseController {
 				);
 				$list[] = $arr;
 			}
-			return View::make ('bookBuy.personal', array('list' => $list, 'user' => Auth::user()->user_name));
+			return View::make ('bookBuy.personal', array('list' => $list, 'user' => Auth::user()));
 		}
 		else {
 			return Redirect::to('loginPage')->with('message', 'Please Login');

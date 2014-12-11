@@ -26,14 +26,16 @@
           <li>
             <a href="/personal">个人中心</a>
           </li>
+          @if ($user->user_rank=='购书管理')
           <li class="uk-active">
             <a href="/admin">购书管理</a>
           </li>
+          @endif
       </ul>
 
       <div class="uk-navbar-flip" id="logout-btn">
         <ul class="uk-navbar-nav">
-          <li><a href="#">{{$user}}</a></li>
+          <li><a href="#">{{$user->user_name}}</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>

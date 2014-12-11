@@ -4,6 +4,12 @@ class Account extends BaseController {
 
 	public function loginPage()
 	{
+		/*$user = new User;
+		$user->user_id = 12108234;
+		$user->password = Hash::make('12108234');
+		$user->user_name = '张旭';
+		$user->user_rank = 'user';
+		$user->save();*/
 		return View::make('land.land');
 	}
 

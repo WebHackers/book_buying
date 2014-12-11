@@ -25,14 +25,16 @@
           <li>
             <a href="/personal">个人中心</a>
           </li>
+          @if ($user->user_rank=='购书管理')
           <li>
             <a href="/admin">购书管理</a>
           </li>
+          @endif
       </ul>
 
       <div class="uk-navbar-flip" id="logout-btn">
         <ul class="uk-navbar-nav">
-          <li><a href="#">{{$user}}</a></li>
+          <li><a href="#">{{$user->user_name}}</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>
@@ -44,7 +46,7 @@
     <div class="uk-width-1-6"><br></div>
     <div class="uk-width-4-6" id="main-content"><br>
       <div class="uk-grid">
-        <a class="uk-width-1-5" href="{{$book['rec']->buy_link}}">
+        <a class="uk-width-1-5" target="_blank" href="{{$book['rec']->buy_link}}">
           <img src="{{$book['basic']->book_pic}}">
         </a>
 
@@ -60,7 +62,7 @@
             <span class="uk-text-muted uk-width-4-10 list-content">{{$book['basic']->book_edit}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">书籍类别：{{$book['basic']->book_type}}</span>
             <div class="uk-width-2-10 list-content">
-              <button class="uk-button {{$book['btn']}} uk-button-mini list-btn" type="button" id="like_{{$book['basic']->id}}">
+              <button class="uk-button {{$book['btn']}} uk-button-mini list-btn" type="button" id="like">
                 <i class="uk-icon-thumbs-o-up"></i> {{$book['tip']}} {{$book['basic']->favour}}
               </button>
             </div>
@@ -68,7 +70,7 @@
 
           <div class="uk-grid list-item-info">
             <span class="uk-text-muted uk-width-4-10 list-content">出版日期：{{$book['basic']->book_pub}}</span>
-            <span class="uk-text-muted uk-width-3-10 list-content">推荐类型：{{$book['rec']->rec_type}}</span>
+            <span class="uk-text-muted uk-width-3-10 list-content">推荐人：{{$book['name']}}</span>
             <div class="uk-width-2-10 list-content">
             </div>
           </div>
@@ -77,7 +79,7 @@
             <span class="uk-text-muted uk-width-4-10 list-content">ISBN：{{$book['basic']->book_isbn}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">推荐时间：{{explode(' ',$book['rec']->created_at)[0]}}</span>
             <div class="uk-width-2-10 list-content">
-              <button class="uk-button uk-button-mini list-btn" type="button">相关链接</button>
+              <button class="uk-button uk-button-mini list-btn" type="button" id="link">相关链接</button>
             </div>
           </div>
 
@@ -106,7 +108,7 @@
           </article>
           @endforeach
 
-          <form class="uk-form" action="/info/update?id={{$book['basic']->id}}" method="post">
+          <form class="uk-form" action="/info/addMsg?id={{$book['basic']->id}}" method="post">
             <fieldset>
               <div class="uk-form-row">
                 <textarea id="inputarea" cols="30" rows="5" name="message" placeholder="message"></textarea>
@@ -125,5 +127,8 @@
     <div class="uk-width-1-6"><br></div>
   </div>
 
+  <div id="linkBoard">
+    <input type="text">
+  </div>
 </body>
 </html>
