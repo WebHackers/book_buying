@@ -20,12 +20,23 @@ $(document).ready(function() {
 		);
 	});
 
-	$('#link').click(function() {
-		if($('#linkBoard').css('display')=='none') {
-			$('#linkBoard').css('display', 'inline');
+	$('#showBoard , #close-icon').click(function() {
+		if($('#board').css('display')=='none') {
+			$('#board').css('display', 'inline');
+			$('#board').animate({
+		      opacity: '1',
+		      top: '50px'
+		    },250);
 		}
 		else {
-			$('#linkBoard').css('display', 'none');
+			$('#board').animate({
+		      opacity: '0',
+		      top: '20px'
+		    },
+		    250,
+		    function() {
+				$('#board').css('display', 'none');
+		    });
 		}
 	});
 

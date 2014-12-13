@@ -7551,3 +7551,340 @@ Stack trace:
 #16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
 #18 {main} [] []
+[2014-12-12 14:34:45] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:148
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-12 14:34:57] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:148
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-13 06:30:13] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'endforeach' (T_ENDFOREACH)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:110
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-13 06:31:55] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'endforeach' (T_ENDFOREACH)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:110
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-13 06:32:57] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:170
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-13 06:33:33] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'endforeach' (T_ENDFOREACH)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:110
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-13 06:37:55] veta.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'endforeach' (T_ENDFOREACH)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:110
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-12-13 06:38:58] veta.ERROR: exception 'ErrorException' with message 'Undefined variable: links' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:106
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(106): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 106, Array)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#7 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: links (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:106
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-12-13 06:40:22] veta.ERROR: exception 'ErrorException' with message 'Undefined variable: links' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:106
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(106): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 106, Array)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#7 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: links (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:106
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-12-13 06:42:28] veta.ERROR: exception 'ErrorException' with message 'Function split() is deprecated' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:105
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8192, 'Function split(...', '/opt/lampp/htdo...', 105, Array)
+#1 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(105): split()
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#8 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'ErrorException' with message 'Function split() is deprecated (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:105
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-12-13 06:44:34] veta.ERROR: exception 'ErrorException' with message 'Undefined variable: lnik' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:107
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(107): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 107, Array)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#7 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'ErrorException' with message 'Undefined variable: lnik (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:107
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-12-13 06:44:53] veta.ERROR: exception 'ErrorException' with message 'Undefined offset: 2' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:111
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(111): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', '/opt/lampp/htdo...', 111, Array)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#7 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'ErrorException' with message 'Undefined offset: 2 (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:111
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-12-13 06:47:29] veta.ERROR: exception 'ErrorException' with message 'Undefined offset: 2' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:111
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(111): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', '/opt/lampp/htdo...', 111, Array)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#7 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'ErrorException' with message 'Undefined offset: 2 (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:111
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-12-13 06:47:48] veta.ERROR: exception 'ErrorException' with message 'Undefined offset: 2' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:111
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3(111): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', '/opt/lampp/htdo...', 111, Array)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#6 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#7 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'ErrorException' with message 'Undefined offset: 2 (View: /opt/lampp/htdocs/book_buying/app/views/bookBuy/info.blade.php)' in /opt/lampp/htdocs/book_buying/app/storage/views/c14d8a8ce92985f5446f4deaaf9a46d3:111
+Stack trace:
+#0 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/View/View.php(76): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Http/Response.php(43): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/book_buying/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1496): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1031): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(775): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(745): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /opt/lampp/htdocs/book_buying/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /opt/lampp/htdocs/book_buying/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 /opt/lampp/htdocs/book_buying/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []

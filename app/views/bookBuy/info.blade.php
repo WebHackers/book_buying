@@ -54,7 +54,7 @@
           <div class="uk-grid list-item-info">
             <span class="uk-article-lead uk-width-4-10 list-content">{{$book['basic']->book_name}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">{{$book['basic']->book_author}}</span>
-            <span class="uk-width-2-10 list-content">价格:{{$book['basic']->book_price}}</span>
+            <span class="uk-width-2-10 list-content">价格:{{round($book['basic']->book_price,1)}}</span>
             <div class="uk-width-1-10 list-badge"><div class="uk-badge">{{$book['status']}}</div></div>
           </div>
 
@@ -79,7 +79,6 @@
             <span class="uk-text-muted uk-width-4-10 list-content">ISBN：{{$book['basic']->book_isbn}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">推荐时间：{{explode(' ',$book['rec']->created_at)[0]}}</span>
             <div class="uk-width-2-10 list-content">
-              <button class="uk-button uk-button-mini list-btn" type="button" id="link">相关链接</button>
             </div>
           </div>
 
@@ -89,6 +88,24 @@
 
           <div class="uk-grid list-item-info">
             <span class="uk-text-muted uk-width-8-10">简介：{{$book['basic']->book_info}}</span>
+          </div>
+
+          <div class="uk-grid" style="margin:30px 0 20px 0;">
+            <div class="uk-width-8-10">书籍链接：
+              @if($book['basic']->book_link=='')
+                <span>暂无~</span>
+              @else
+                <?php $links = explode('<<&&>>',$book['basic']->book_link); ?>
+                @foreach ($links as $link)
+                  @if($link=='')
+                    <?php continue; ?>
+                  @endif
+                  <?php $link = explode('<&>',$link); ?>
+                  <a class="uk-button uk-button-small link-button" target="_blank" href="{{$link[2]}}">{{$link[1]}}</a>
+                @endforeach
+              @endif
+              <button class="uk-button uk-button-primary uk-button-small" id="showBoard">+</button>
+            </div>
           </div>
         </div>
 
@@ -127,8 +144,22 @@
     <div class="uk-width-1-6"><br></div>
   </div>
 
-  <div id="linkBoard">
-    <input type="text">
+  <div id="board">
+    <a class="uk-close" id="close-icon" style="float:right;"></a>
+    <div class="uk-grid" id="board-content">
+      <form class="uk-form uk-width-1-1" action="/info/addLink?id={{$book['basic']->id}}" method="post">
+        <fieldset data-uk-margin>
+          <select id="title" name="title">
+            <option>相关资料</option>
+            <option>学习网站</option>
+            <option>精彩书评</option>
+          </select>
+          <input type="text" id="url" name="url" placeholder="URL">
+          <input class="uk-button uk-button-primary" type="submit" value="Add">
+        </fieldset>
+      </form>
+    </div>
   </div>
+    
 </body>
 </html>

@@ -72,11 +72,12 @@ class Info extends BaseController {
 
 	public function addLink() {
 		$basic = BookBasic::find(Input::get('id'));
-		if(count($basic)==0) return 'false';
+		if(count($basic)==0) return Redirect::to('error')->with('message', '链接添加失败');
 		$link = Auth::user()->id . '<&>' . Input::get('title') . '<&>' . Input::get('url') . '<<&&>>';
-		$basic->book_link += $link;
+		$links = $basic->book_link;
+		$basic->book_link = $links . $link;
 		$basic->save();
-		return 'true';
+		return Redirect::to('/info?id='.Input::get('id'));
 	}
 
 }

@@ -1,5 +1,19 @@
 
 $(document).ready(function() {
+	var li = [];
+	var num = 0;
+	$('.list-li').each(function(index) {
+		li[index] = $(this);
+	});
+	$.extend({
+		'add':function() {
+			li[num].addClass("uk-animation-slide-bottom");
+			num++;
+			if(num==li.length) clearInterval(loop);
+		}
+	});
+	var loop = setInterval('$.add()', 100);
+		
 	$('.list-li').mouseover(function() {
 		$(this).find('.list-close').css('visibility', 'visible');
 	});

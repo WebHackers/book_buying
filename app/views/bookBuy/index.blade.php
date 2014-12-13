@@ -46,6 +46,7 @@
   <div class="uk-grid" id="content">
     <div class="uk-width-1-6"><br></div>
     <div class="uk-width-4-6" id="main-content"><br>
+      @if(count($list)>0)
     	<ul class="uk-list uk-list-line">
         @foreach ($list as $book)
     		<li class="uk-grid list-li">
@@ -57,7 +58,7 @@
     				<div class="uk-grid list-item">
     					<a class="uk-article-lead uk-width-4-10 list-content" href="info?id={{$book['rec']->book_kind}}">{{$book['basic']->book_name}}</a>
     					<span class="uk-article-meta uk-width-3-10 list-content">{{$book['basic']->book_author}}</span>
-    					<span class="uk-width-2-10 list-content">价格：{{$book['basic']->book_price}}</span>
+    					<span class="uk-width-2-10 list-content">价格：{{round($book['basic']->book_price,1)}}</span>
               <div class="uk-width-1-10 list-badge"><div class="uk-badge">{{$book['status']}}</div></div>
     				</div>
 
@@ -82,6 +83,9 @@
     		</li>
         @endforeach
     	</ul>
+      @else
+      <div style="text-align:center;">暂无推荐书目 ╮(╯_╰)╭</div>
+      @endif
     </div>
   		
     <div class="uk-width-1-10"><br></div>

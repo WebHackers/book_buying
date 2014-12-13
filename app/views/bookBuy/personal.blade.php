@@ -47,9 +47,10 @@
   <div class="uk-grid" id="content">
     <div class="uk-width-1-6"><br></div>
     <div class="uk-width-4-6" id="main-content"><br>
+      @if(count($list)>0)
       <ul class="uk-list uk-list-line">
         @foreach ($list as $book)
-        <li class="uk-grid uk-animation-reverse list-li" id="li_{{$book['rec']->book_kind}}">
+        <li class="uk-grid list-li" id="li_{{$book['rec']->book_kind}}">
           <a class="uk-width-1-10 list-link" target="_blank" href="{{$book['rec']->buy_link}}">
             <img class="list-img" src="{{$book['basic']->book_pic}}">
           </a>
@@ -58,7 +59,7 @@
             <div class="uk-grid list-item">
               <a class="uk-article-lead uk-width-4-10 list-content" href="info?id={{$book['basic']->id}}">{{$book['basic']->book_name}}</a>
               <span class="uk-article-meta uk-width-3-10 list-content">{{$book['basic']->book_author}}</span>
-              <span class="uk-width-2-10 list-content">价格：{{$book['basic']->book_price}}</span>
+              <span class="uk-width-2-10 list-content">价格：{{round($book['basic']->book_price,1)}}</span>
               <div class="uk-width-1-10 list-badge"><div class="uk-badge">{{$book['status']}}</div></div>
             </div>
 
@@ -86,6 +87,9 @@
         </li>
         @endforeach
       </ul>
+      @else
+      <div style="text-align:center;">你还没有推荐图书呦～</div>
+      @endif
     </div>
     <div class="uk-width-1-6"><br></div>
   </div>
