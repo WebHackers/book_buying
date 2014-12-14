@@ -6,7 +6,7 @@ class Personal extends BaseController {
 	{
 		if(Auth::check()) {
 			$list = array();
-			$rec_list = BookRecommend::where('user_id', '=', Auth::user()->id)->get();
+			$rec_list = BookRecommend::where('user_id', '=', Auth::user()->id)->paginate(10);
 			foreach ($rec_list as $rec) {
 				$basic = BookBasic::find($rec->book_kind);
 
@@ -32,14 +32,18 @@ class Personal extends BaseController {
 				);
 				$list[] = $arr;
 			}
-			return View::make ('bookBuy.personal', array('list' => $list, 'user' => Auth::user()));
+			return View::make ('bookBuy.personal', array(
+				'page' => $rec_list, 
+				'list' => $list, 
+				'user' => Auth::user()
+			));
 		}
 		else {
 			return Redirect::to('loginPage')->with('message', 'Please Login');
 		}
 	}
 
-	public function update()
+	public function delete()
 	{
 		if(!Auth::check()) {return;}
 

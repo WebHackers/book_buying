@@ -49,7 +49,7 @@
       @if(count($list)>0)
     	<ul class="uk-list uk-list-line">
         @foreach ($list as $book)
-    		<li class="uk-grid list-li">
+    		<li class="uk-grid list-li" id="li_{{$book['basic']->id}}">
     			<a class="uk-width-1-10 list-link" target="_blank" href="{{$book['rec']->buy_link}}">
     				<img class="list-img" src="{{$book['basic']->book_pic}}">
     			</a>
@@ -86,6 +86,24 @@
       @else
       <div style="text-align:center;">暂无推荐书目 ╮(╯_╰)╭</div>
       @endif
+      <ul class="uk-pagination" id="page-link">
+        @for($p=1;$p<=$page->getLastPage();$p++)
+          @if($p==1||$p==$page->getLastPage()||($p>=$page->getCurrentPage()-2&&$p<=$page->getCurrentPage()+2))
+            @if($p!=$page->getCurrentPage())
+              <li><a href="/?page={{$p}}">{{$p}}</a></li>
+            @else
+              <li class="uk-active"><span>{{$p}}</span></li>
+            @endif
+          @else
+            <li><span>...</span></li>
+            @if($p>$page->getCurrentPage())
+              <?php $p = $page->getLastPage()-1?>
+            @else
+              <?php $p = $page->getCurrentPage()-3?>
+            @endif
+          @endif
+        @endfor
+      </ul>
     </div>
   		
     <div class="uk-width-1-10"><br></div>

@@ -6,7 +6,7 @@
 			if(Auth::check())
 			{
 				$list = array();
-				$rec_list = BookRecommend::all();
+				$rec_list = BookRecommend::paginate(10);
 				foreach ($rec_list as $rec) {
 					$user = User::find($rec->user_id);
 					if(count($user)==0) {
@@ -41,7 +41,11 @@
 					);
 					$list[] = $arr;
 				}
-				return View::make ('bookBuy.index', array('list' => $list, 'user' => Auth::user()));
+				return View::make ('bookBuy.index', array(
+					'page' => $rec_list, 
+					'list' => $list, 
+					'user' => Auth::user()
+				));
 			}
 			else
 			{

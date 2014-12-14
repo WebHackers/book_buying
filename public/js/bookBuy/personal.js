@@ -1,18 +1,5 @@
 
 $(document).ready(function() {
-	var li = [];
-	var num = 0;
-	$('.list-li').each(function(index) {
-		li[index] = $(this);
-	});
-	$.extend({
-		'add':function() {
-			li[num].addClass("uk-animation-slide-bottom");
-			num++;
-			if(num==li.length) clearInterval(loop);
-		}
-	});
-	var loop = setInterval('$.add()', 100);
 		
 	$('.list-li').mouseover(function() {
 		$(this).find('.list-close').css('visibility', 'visible');
@@ -23,16 +10,17 @@ $(document).ready(function() {
 	$('button[id^="del"]').click(function() {
 		var kind = $(this).attr('id').split('_')[1];
 		$.post(
-			'/personal/update',
+			'/personal/delete',
 			{
 				kind: kind
 			},
 			function(data, stauts) {
 				if(data=='removed') {
 					$('#li_'+kind).animate({
-						opacity:'0',
+						top:'-50px',
+						opacity:'0'
 					},
-					'slow',
+					500,
 					function() {
 						$(this).remove();
 					});

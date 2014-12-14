@@ -100,7 +100,7 @@ Route::post('/recommend/update', 'recommend@update');
 
 Route::get('/personal', 'personal@index');
 
-Route::post('/personal/update', 'personal@update');
+Route::post('/personal/delete', 'personal@delete');
 
 /**
  *|--------------------------------------------------------------------------

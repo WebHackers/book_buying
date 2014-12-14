@@ -125,6 +125,25 @@
           </article>
           @endforeach
 
+          <ul class="uk-pagination" id="page-link">
+            @for($p=1;$p<=$page->getLastPage();$p++)
+              @if($p==1||$p==$page->getLastPage()||($p>=$page->getCurrentPage()-2&&$p<=$page->getCurrentPage()+2))
+                @if($p!=$page->getCurrentPage())
+                  <li><a href="/info?id={{$book['basic']->id}}&page={{$p}}">{{$p}}</a></li>
+                @else
+                  <li class="uk-active"><span>{{$p}}</span></li>
+                @endif
+              @else
+                <li><span>...</span></li>
+                @if($p>$page->getCurrentPage())
+                  <?php $p = $page->getLastPage()-1?>
+                @else
+                  <?php $p = $page->getCurrentPage()-3?>
+                @endif
+              @endif
+            @endfor
+          </ul>
+
           <form class="uk-form" action="/info/addMsg?id={{$book['basic']->id}}" method="post">
             <fieldset>
               <div class="uk-form-row">

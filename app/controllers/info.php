@@ -30,7 +30,7 @@ class Info extends BaseController {
 				else {$status = '';}
 
 				$msgList = array();
-				$msgs = BookMessage::where('book_kind', '=', Input::get('id'))->get();
+				$msgs = BookMessage::where('book_kind', '=', Input::get('id'))->paginate(10);
 				foreach ($msgs as $msg) {
 					$user = User::find($msg->user_id);
 					$msgList[] = array(
@@ -50,7 +50,11 @@ class Info extends BaseController {
 					'msg' => $msgList
 				);
 
-				return View::make('bookBuy.info', array('book' => $arr, 'user' => Auth::user()));
+				return View::make('bookBuy.info', array(
+					'page' => $msgs,
+					'book' => $arr, 
+					'user' => Auth::user()
+				));
 			}
 			return Redirect::to('error')->with('message', '没找到相应的书籍~');
 		}
