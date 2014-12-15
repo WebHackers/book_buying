@@ -118,7 +118,9 @@ Route::post('/personal/delete', 'personal@delete');
 
 Route::get('/admin', 'admin@index');
 
-Route::post('/admin/toggle', 'admin@toggle');
+Route::post('/admin/buy', 'admin@buy');
+
+Route::get('/activity', 'admin@activity');
 
 Route::post('/admin/update', 'admin@update');
 
@@ -126,12 +128,5 @@ Route::get('/error', function() {
 	return View::make('bookBuy.error', array('message' => Session::get('message')));
 });
 
-Route::get('/master', function(){
-	return View::make('layouts.master');
-});
 
-Route::get('something', ['before' => 'force.ssl', function()
-{
-    return "This will be forced SSL";
-}]);
 ?>

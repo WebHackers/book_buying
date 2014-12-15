@@ -84,7 +84,7 @@ class Recommend extends BaseController {
 			$rec_reason==''||
 			$rec_type=='')
 		{
-			return "KeyInfo couldn't be empty!";
+			return Redirect::to('error')->with('message', '重要数据不能为空~');
 		}
 		else
 		{
@@ -104,6 +104,9 @@ class Recommend extends BaseController {
 			$bookBasic->favour      = 0;
 			$bookBasic->save();
 
+			if($bookBasic->id==NULL) {
+				return Redirect::to('error')->with('message', '插入失败 ORZ');
+			}
 			$recommend->act_id      = 0;
 			$recommend->user_id     = Auth::user()->id;
 			$recommend->book_kind   = $bookBasic->id;
@@ -113,6 +116,11 @@ class Recommend extends BaseController {
 			$recommend->status    	= '未购买';
 			$recommend->save();
 
+			if($recommend->id==NULL) {
+				$basic = BookBasic::find($bookBasic->id);
+				$basic->delete();
+				return Redirect::to('error')->with('message', '插入失败 ORZ');
+			}
 			return Redirect::to('personal');
 		}
 	}

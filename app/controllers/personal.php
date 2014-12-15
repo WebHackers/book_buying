@@ -47,11 +47,11 @@ class Personal extends BaseController {
 	{
 		if(!Auth::check()) {return;}
 
-		$basic = BookBasic::find(Input::get('kind'));
+		$basic = BookBasic::find(Input::get('id'));
 		if(count($basic)>0) $basic->delete();
-		$rec = BookRecommend::where('book_kind', '=', Input::get('kind'))->delete();
-		$like = BookLike::where('book_kind', '=', Input::get('kind'))->delete();
-		$msg = BookMessage::where('book_kind', '=', Input::get('kind'))->delete();
+		$rec = BookRecommend::where('book_kind', '=', Input::get('id'))->delete();
+		$like = BookLike::where('book_kind', '=', Input::get('id'))->delete();
+		$msg = BookMessage::where('book_kind', '=', Input::get('id'))->delete();
 
 		return 'removed';
 	}

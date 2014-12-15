@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bookBuy/personal.css"/>
 	<link rel="stylesheet" type="text/css" href="frame/uikit/css/uikit.min.css"/>
 	<script type="text/javascript" src="js/jquery2.1.0.js"></script>
-  <script type="text/javascript" src="js/bookBuy/index.js"></script>
+  <script type="text/javascript" src="js/bookBuy/public.js"></script>
 	<script type="text/javascript" src="js/bookBuy/personal.js"></script>
 	<script type="text/javascript" src="frame/uikit/js/uikit.min.js"></script> 
 
@@ -67,7 +67,7 @@
               <span class="uk-article-meta uk-width-4-10 list-content">书籍类型：{{$book['basic']->book_type}}</span>
               <span class="uk-article-meta uk-width-3-10 list-content">推荐时间：{{explode(' ',$book['rec']->created_at)[0]}}</span>
               <div class="uk-width-2-10 list-content">
-                <button class="uk-button {{$book['btn']}} uk-button-mini list-btn" type="button" id="like_{{$book['basic']->id}}">
+                <button class="uk-button {{$book['btn']}} uk-button-mini list-btn-favour" type="button" id="like_{{$book['basic']->id}}">
                   <i class="uk-icon-thumbs-o-up"></i> {{$book['tip']}} {{$book['basic']->favour}}
                 </button>
               </div>

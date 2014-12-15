@@ -52,7 +52,7 @@
 	margin: 5px 0 5px 0 !important;
 }
 
-.list-item-info {
+.list-item-big {
 	margin: 10px 0 10px 0 !important;
 }
 
@@ -71,8 +71,12 @@
 	visibility: hidden;
 }
 
-.list-btn {
+.list-btn-favour {
 	width: 60px;
+}
+
+.list-btn-admin {
+	padding: 0 !important;
 }
 
 a:hover {
@@ -82,3 +86,10 @@ a:hover {
 #page-link {
 	margin: 50px 0 100px 0;
 }
+
+/* admin */
+
+#subnav {
+	margin: 0 0 20px 0;
+}
+

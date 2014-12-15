@@ -51,14 +51,14 @@
         </a>
 
         <div class="uk-width-4-5 uk-article list-info">
-          <div class="uk-grid list-item-info">
+          <div class="uk-grid list-item-big">
             <span class="uk-article-lead uk-width-4-10 list-content">{{$book['basic']->book_name}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">{{$book['basic']->book_author}}</span>
             <span class="uk-width-2-10 list-content">价格:{{round($book['basic']->book_price,1)}}</span>
             <div class="uk-width-1-10 list-badge"><div class="uk-badge">{{$book['status']}}</div></div>
           </div>
 
-          <div class="uk-grid list-item-info">
+          <div class="uk-grid list-item-big">
             <span class="uk-text-muted uk-width-4-10 list-content">{{$book['basic']->book_edit}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">书籍类别：{{$book['basic']->book_type}}</span>
             <div class="uk-width-2-10 list-content">
@@ -68,25 +68,25 @@
             </div>
           </div>
 
-          <div class="uk-grid list-item-info">
+          <div class="uk-grid list-item-big">
             <span class="uk-text-muted uk-width-4-10 list-content">出版日期：{{$book['basic']->book_pub}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">推荐人：{{$book['name']}}</span>
             <div class="uk-width-2-10 list-content">
             </div>
           </div>
 
-          <div class="uk-grid list-item-info">
+          <div class="uk-grid list-item-big">
             <span class="uk-text-muted uk-width-4-10 list-content">ISBN：{{$book['basic']->book_isbn}}</span>
             <span class="uk-text-muted uk-width-3-10 list-content">推荐时间：{{explode(' ',$book['rec']->created_at)[0]}}</span>
             <div class="uk-width-2-10 list-content">
             </div>
           </div>
 
-          <div class="uk-grid list-item-info">
+          <div class="uk-grid list-item-big">
             <span class="uk-text-muted uk-width-8-10">推荐理由：{{$book['rec']->rec_reason}}</span>
           </div>
 
-          <div class="uk-grid list-item-info">
+          <div class="uk-grid list-item-big">
             <span class="uk-text-muted uk-width-8-10">简介：{{$book['basic']->book_info}}</span>
           </div>
 
@@ -171,6 +171,7 @@
           <select id="title" name="title">
             <option>相关资料</option>
             <option>学习网站</option>
+            <option>学习心得</option>
             <option>精彩书评</option>
           </select>
           <input type="text" id="url" name="url" placeholder="URL">
