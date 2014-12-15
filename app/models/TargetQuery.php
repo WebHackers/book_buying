@@ -1,3 +1,4 @@
+<meta charset="utf-8" />
 <?php
 //-------------------- use simple_html_dom --------------------
 include_once('simple_html_dom.php');
@@ -46,6 +47,7 @@ class TargetQuery {
           case '出版日期':
             $details = explode('：', $this->charsetReplace($post->innertext));
             $book['book_publish'] = $details[1];
+            break;
           case 'ISBN':
             $details = explode('：', $this->charsetReplace($post->innertext));
             $book['ISBN'] = $details[1];
@@ -53,13 +55,21 @@ class TargetQuery {
           case '出版社':
             $details = explode('：', $this->charsetReplace($post->innertext));
             $book['book_press'] = $details[1];
+            break;
         }
     }
 
-    // search book_editor_choice
-    foreach ($html->find('div[class=pro_r_deta] p') as $post)
-    {
-      $book['book_info'] = $this->charsetReplace($post->innertext);
+    // search book_info
+    foreach ($html->find('div[id=con_a_1]') as $post)
+    { 
+      $i = 0;
+      foreach ($post->find('div[class=pro_r_deta]') as $book_abstract) {
+        $book['book_info'] = str_replace('内容简介', '', $this->charsetReplace($book_abstract->innertext));
+        $i++;
+        if (2 == $i) {
+          break;
+        }
+      }
     }
 
     //$response = json_encode($book);
@@ -142,8 +152,8 @@ class TargetQuery {
       
     }
 
-    // search book_editor_choice
-    foreach ($html->find('div[id=abstract] div[class=descrip]') as $post)
+    // search book_info
+    foreach ($html->find('div[id=detail_all] div[id=content] div[class=descrip]') as $post)
     {
       $book['book_info'] = $this->charsetReplace($post->innertext);
     }
@@ -157,7 +167,7 @@ class TargetQuery {
   function charsetReplace($str) {
     $arr = ['　' => '',
             ' ' => '',
-            '	' => '',
+            ' ' => '',
             '&yen' => '',
             '&yen;' => '',
             '&nbsp' => '',
