@@ -1,4 +1,3 @@
-<meta charset="utf-8" />
 <?php
 //-------------------- use simple_html_dom --------------------
 include_once('simple_html_dom.php');
@@ -70,6 +69,10 @@ class TargetQuery {
           break;
         }
       }
+    }
+
+    if (!$book['book_info']) {
+      $book['book_info'] = '无简介';
     }
 
     //$response = json_encode($book);
@@ -158,6 +161,10 @@ class TargetQuery {
       $book['book_info'] = $this->charsetReplace($post->innertext);
     }
 
+    if (!$book['book_info']) {
+      $book['book_info'] = '无简介';
+    }
+
     //$response = json_encode($book);
     //echo $response;
     //print_r($book);
@@ -188,4 +195,3 @@ class TargetQuery {
     $str = strip_tags(iconv('GBK', 'UTF-8', $str));
     return strtr($str, $arr);
   }
-}
