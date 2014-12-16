@@ -6,7 +6,7 @@ class Admin extends BaseController {
 	{
 		if(Auth::check()) {
 			if(Auth::user()->user_rank=='购书管理') {
-				if(Input::has('status')) $status = '已购买';
+				if(Input::get('status')=='true') $status = '已购买';
 				else  $status = '未购买';
 				$list = array();
 				$rec_list = BookRecommend::where('status', '=', $status)->paginate(10);
@@ -29,6 +29,7 @@ class Admin extends BaseController {
 					$list[] = $arr;
 				}
 				return View::make ('bookBuy.admin', array(
+					'position' => 'admin',
 					'page' => $rec_list, 
 					'status' => $status,
 					'list' => $list, 
@@ -66,7 +67,10 @@ class Admin extends BaseController {
 	public function activity()
 	{
 		if(Auth::check()) {
-			return View::make('bookBuy.activity', array('user' => Auth::user()));
+			return View::make('bookBuy.activity', array(
+				'position' => 'admin',
+				'user' => Auth::user()
+			));
 		}
 	}
 

@@ -195,3 +195,6 @@ class TargetQuery {
     $str = strip_tags(iconv('GBK', 'UTF-8', $str));
     return strtr($str, $arr);
   }
+}
+
+?>

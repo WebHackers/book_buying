@@ -51,6 +51,7 @@ class Info extends BaseController {
 				);
 
 				return View::make('bookBuy.info', array(
+					'position' => 'none',
 					'page' => $msgs,
 					'book' => $arr, 
 					'user' => Auth::user()

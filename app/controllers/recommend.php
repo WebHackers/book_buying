@@ -6,7 +6,10 @@ class Recommend extends BaseController {
 	{
 		if(Auth::check())
 		{
-			return View::make('bookBuy.recommend', array('user' => Auth::user()));
+			return View::make('bookBuy.recommend', array(
+				'position' => 'recommend',
+				'user' => Auth::user()
+			));
 		}
 		else
 		{

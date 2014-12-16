@@ -33,6 +33,7 @@ class Personal extends BaseController {
 				$list[] = $arr;
 			}
 			return View::make ('bookBuy.personal', array(
+				'position' => 'personal',
 				'page' => $rec_list, 
 				'list' => $list, 
 				'user' => Auth::user()
