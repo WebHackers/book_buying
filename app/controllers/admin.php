@@ -37,40 +37,31 @@ class Admin extends BaseController {
 				));
 			}
 			else {
-				return Redirect::to('error')->with('message', 'You are not the Administrator');
+				return Redirect::to('error')->with('message','你不是购书管理员');
 			}
 		}
 		else {
-			return Redirect::to('loginPage')->with('message', 'Please Login');
+			return Redirect::to('loginPage')->with('message','请先登录');
 		}
 	}
 
 	public function buy()
 	{
-		if(!Auth::check()) {return;}
-		$rec = BookRecommend::where('book_kind', '=', Input::get('id'))->get();
-		if(count($rec)!=0) {
-			if($rec[0]->status == '已购买') {
-				$rec[0]->status = '未购买';
+		if(Auth::check()&&Auth::user()->user_rank=='购书管理') {
+			$rec = BookRecommend::where('book_kind', '=', Input::get('id'))->get();
+			if(count($rec)!=0) {
+				if($rec[0]->status == '已购买') {
+					$rec[0]->status = '未购买';
+				}
+				else {
+					$rec[0]->status = '已购买';
+				}
+				$rec[0]->save();
+				return 'true';
 			}
 			else {
-				$rec[0]->status = '已购买';
+				return 'false';
 			}
-			$rec[0]->save();
-			return 'true';
-		}
-		else {
-			return 'false';
-		}
-	}
-
-	public function activity()
-	{
-		if(Auth::check()) {
-			return View::make('bookBuy.activity', array(
-				'position' => 'admin',
-				'user' => Auth::user()
-			));
 		}
 	}
 
