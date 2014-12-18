@@ -51,13 +51,14 @@ class Info extends BaseController {
 				);
 
 				return View::make('bookBuy.info', array(
+					'message' => Session::get('message'),
 					'position' => 'none',
 					'page' => $msgs,
 					'book' => $arr, 
 					'user' => Auth::user()
 				));
 			}
-			return Redirect::to('error')->with('message', '没找到相应的书籍~');
+			return Redirect::back()->with('message', '没找到相应的书籍~');
 		}
 		else {
 			return Redirect::to('loginPage');

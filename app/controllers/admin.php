@@ -29,6 +29,7 @@ class Admin extends BaseController {
 					$list[] = $arr;
 				}
 				return View::make ('bookBuy.admin', array(
+					'message' => Session::get('message'),
 					'position' => 'admin',
 					'page' => $rec_list, 
 					'status' => $status,

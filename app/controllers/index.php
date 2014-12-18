@@ -42,6 +42,7 @@
 					$list[] = $arr;
 				}
 				return View::make ('bookBuy.index', array(
+					'message' => Session::get('message'),
 					'position' => '',
 					'page' => $rec_list, 
 					'list' => $list, 

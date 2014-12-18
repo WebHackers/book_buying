@@ -7,6 +7,7 @@ class Recommend extends BaseController {
 		if(Auth::check())
 		{
 			return View::make('bookBuy.recommend', array(
+				'message' => Session::get('message'),
 				'position' => 'recommend',
 				'user' => Auth::user()
 			));
@@ -74,7 +75,7 @@ class Recommend extends BaseController {
 
 		$num = count(BookBasic::where('book_isbn', '=', $book_isbn)->get());
 		if($num!=0) {
-			return Redirect::to('error')->with('message', '书籍已被推荐，换一本吧');
+			return Redirect::back()->with('message', '书籍已被推荐，换一本吧');
 		}
 		
 		if($book_isbn==''||
@@ -87,7 +88,7 @@ class Recommend extends BaseController {
 			$rec_reason==''||
 			$rec_type=='')
 		{
-			return Redirect::to('error')->with('message', '重要数据不能为空~');
+			return Redirect::back()->with('message', '重要数据不能为空~');
 		}
 		else
 		{
@@ -108,7 +109,7 @@ class Recommend extends BaseController {
 			$bookBasic->save();
 
 			if($bookBasic->id==NULL) {
-				return Redirect::to('error')->with('message', '插入失败 ORZ');
+				return Redirect::back()->with('message', '插入失败 ORZ');
 			}
 			$recommend->act_id      = 0;
 			$recommend->user_id     = Auth::user()->id;
@@ -122,7 +123,7 @@ class Recommend extends BaseController {
 			if($recommend->id==NULL) {
 				$basic = BookBasic::find($bookBasic->id);
 				$basic->delete();
-				return Redirect::to('error')->with('message', '插入失败 ORZ');
+				return Redirect::back()->with('message', '插入失败 ORZ');
 			}
 			return Redirect::to('personal');
 		}

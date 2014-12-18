@@ -40,6 +40,23 @@
   <div class="uk-width-1-6"><br></div>
 </nav>
 
+<div class="uk-grid" id="content">
+  <div class="uk-width-1-6"><br></div>
+  <div class="uk-width-4-6"><br>
+
+@if($message)
+<div class="uk-alert" data-uk-alert>
+  <a href="" class="uk-alert-close uk-close"></a>
+  <p style="text-align:center;">{{$message}}</p>
+</div>
+@endif
+
 @section('body')
 
 @show
+
+  </div>
+  <div class="uk-width-1-6"><br></div>
+</div>
+</body>
+</html>

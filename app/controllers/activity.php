@@ -8,6 +8,7 @@ class Activity extends BaseController {
 			if(Auth::user()->user_rank=='购书管理') {
 				$activity = BookActivity::where('act_status','=','已开启')->get();
 				return View::make('bookBuy.activity', array(
+					'message' => Session::get('message'),
 					'position' => 'admin',
 					'activity' => $activity,
 					'user' => Auth::user()
@@ -26,25 +27,25 @@ class Activity extends BaseController {
 	{
 		if(Auth::check()&&Auth::user()->user_rank=='购书管理') {
 			if(!is_numeric(Input::get('budget')))
-				return Redirect::to('error')->with('message','预算不能是非数字！');
+				return Redirect::back()->with('message','预算不能是非数字！');
 			if(Input::get('deadline')=='')
-				return Redirect::to('error')->with('message','截止时间不能为空！');
+				return Redirect::back()->with('message','截止时间不能为空！');
 			$act = BookActivity::where('act_status','=','已开启')->get();
 			if(count($act)==0) {
 				$act = new BookActivity;
 				$act->act_period = Input::get('deadline');
 				$act->act_budget = Input::get('budget');
 				$act->act_cost = 0;
-				$act->act_sum = 0;
 				$act->act_status = '已开启';
 				$act->act_message = Input::get('message');
+				$act->save();
 			}
 			else {
 				$act[0]->act_period = Input::get('deadline');
 				$act[0]->act_budget = Input::get('budget');
 				$act[0]->act_message = Input::get('message');
+				$act[0]->save();
 			}
-			$act->save();
 			return Redirect::to('activity');
 		}
 	}
@@ -53,8 +54,12 @@ class Activity extends BaseController {
 	{
 		if(Auth::check()&&Auth::user()->user_rank=='购书管理') {
 			if(BookActivity::where('act_status','=','已开启')->count()==0)
-				return Redirect::to('error')->with('message','没有开启的购书活动！');
-
+				return Redirect::back()->with('message','没有开启的购书活动！');
+			if(!is_numeric(Input::get('cost')))
+				return Redirect::back()->with('message','总花费不能是非数字！');
+			/*$rec = BookRecommend::where('status', '=', '已购买')
+				->update(array('status' => '已入库');*/
+			return Input::get('cost');
 		}
 	}
 

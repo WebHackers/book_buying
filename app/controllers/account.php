@@ -10,7 +10,9 @@ class Account extends BaseController {
 		$user->user_name = '谢俊杰';
 		$user->user_rank = '购书管理';
 		$user->save();*/
-		return View::make('land.land');
+		return View::make('land.land', array(
+			'message' => Session::get('message')
+		));
 	}
 
 	public function login()
