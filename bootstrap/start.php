@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'veta' => array('ubuntu'),
+	'veta' => array('veta-ubuntu'),
 
 ));
 

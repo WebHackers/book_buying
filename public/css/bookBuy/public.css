@@ -27,8 +27,8 @@
 .list-li {
 	z-index: 1;
 	position: relative;
-	margin: 10px 0 10px 0 !important;
-	padding: 10px 0 0 0 !important;
+	margin: 0 !important;
+	padding: 10px !important;
 	opacity: 0;
 }
 
@@ -82,7 +82,3 @@ a:hover {
 #page-link {
 	margin: 50px 0 100px 0;
 }
-
-/* admin */
-
-

@@ -19,7 +19,6 @@ class CreateBookActivityTable extends Migration {
 			$table->string('act_period');
 			$table->integer('act_budget');
 			$table->float('act_cost');
-			//$table->integer('act_sum');
 			$table->string('act_status');
 			$table->string('act_message');
 		});

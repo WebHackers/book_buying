@@ -16,6 +16,9 @@
       <li <?php if($position=='personal')echo 'class="uk-active"'; ?> >
         <a href="/personal">个人中心</a>
       </li>
+      <li <?php if($position=='history')echo 'class="uk-active"'; ?> >
+        <a href="/history">购书历史</a>
+      </li>
       @if ($user->user_rank=='购书管理')
       <li class="uk-parent <?php if($position=='admin')echo 'uk-active'; ?>" data-uk-dropdown>
         <a>购书管理</a>
@@ -48,6 +51,16 @@
 <div class="uk-alert" data-uk-alert>
   <a href="" class="uk-alert-close uk-close"></a>
   <p style="text-align:center;">{{$message}}</p>
+</div>
+@endif
+
+@if(isset($act))
+<div class="uk-grid uk-article">
+  <span class="uk-width-1-1 uk-article-lead">购书活动已开始</span>
+  <span class="uk-width-4-10">第 {{$act[0]->id}} 期</span>
+  <span class="uk-width-4-10 uk-article-meta">预算：{{$act[0]->act_budget}}</span>
+  <span class="uk-width-2-10 uk-article-meta">截止时间：{{$act[0]->act_period}}</span>
+  <span class="uk-width-1-1 uk-article-meta">管理员留言：{{$act[0]->act_message}}</span>
 </div>
 @endif
 

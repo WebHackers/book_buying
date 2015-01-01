@@ -6,7 +6,9 @@
 			if(Auth::check())
 			{
 				$list = array();
-				$rec_list = BookRecommend::paginate(10);
+				$rec_list = BookRecommend::where('status', '!=', '已入库')
+					->orderBy('id', 'desc')
+					->paginate(10);
 				foreach ($rec_list as $rec) {
 					$user = User::find($rec->user_id);
 					if(count($user)==0) {
@@ -41,9 +43,14 @@
 					);
 					$list[] = $arr;
 				}
+
+				$act = BookActivity::where('act_status','=','已开启')->get();
+				if(count($act)==0)$act = null;
+
 				return View::make ('bookBuy.index', array(
 					'message' => Session::get('message'),
 					'position' => '',
+					'act' => $act,
 					'page' => $rec_list, 
 					'list' => $list, 
 					'user' => Auth::user()

@@ -9,7 +9,8 @@ class Admin extends BaseController {
 				if(Input::get('status')=='true') $status = '已购买';
 				else  $status = '未购买';
 				$list = array();
-				$rec_list = BookRecommend::where('status', '=', $status)->paginate(10);
+				$rec_list = BookRecommend::where('status', '=', $status)
+					->orderBy('id', 'desc')->paginate(10);
 				foreach ($rec_list as $rec) {
 					$user = User::find($rec->user_id);
 					if(count($user)==0) {
@@ -54,8 +55,11 @@ class Admin extends BaseController {
 				if($rec[0]->status == '已购买') {
 					$rec[0]->status = '未购买';
 				}
-				else {
+				else if($rec[0]->status == '未购买') {
 					$rec[0]->status = '已购买';
+				}
+				else {
+					return 'false';
 				}
 				$rec[0]->save();
 				return 'true';

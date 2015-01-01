@@ -22,7 +22,11 @@ $(document).ready(function() {
 			function(data, status) {//alert(data);
 				if(data=='false'||data['book_name']==undefined)
 				{
-					alert('Target URL is wrong');
+					var dom = '<div class="uk-alert" data-uk-alert>'+
+						'<a href="#" class="uk-alert-close uk-close"></a>'+
+				    '<p>URL错误</p>'+
+				  	'</div>';
+				  $('#alert').append(dom);
 				}
 				else
 				{

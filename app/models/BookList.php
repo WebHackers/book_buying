@@ -7,6 +7,8 @@
 	{
 		protected $table = 'bookList';
 
+		public $timestamps = false;
+
 		protected $guarded = array('id');
 
 		public function book() {

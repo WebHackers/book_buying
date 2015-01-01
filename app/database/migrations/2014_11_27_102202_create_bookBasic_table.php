@@ -15,9 +15,7 @@ class CreateBookBasicTable extends Migration {
 		Schema::create('bookBasic', function(Blueprint $table)
 		{
 			$table->increments('id');
-			//$table->timestamps();
 			$table->string('book_isbn');
-			//$table->integer('act_id');
 			$table->string('book_name');
 			$table->string('book_author');
 			$table->string('book_pub');
@@ -27,9 +25,7 @@ class CreateBookBasicTable extends Migration {
 			$table->text('book_pic');
 			$table->text('book_link');
 			$table->float('book_price');
-			//$table->string('book_status');
 			$table->integer('favour');
-			//$table->integer('dislike');
 		});
 	}
 

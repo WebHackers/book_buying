@@ -18,6 +18,8 @@
 @stop
 
 @section('body')
+	<div id="alert" style="text-align:center;"></div>
+	
   <div class="uk-grid">
   	<div class="uk-width-3-10">
   		<img id="photo" src="">

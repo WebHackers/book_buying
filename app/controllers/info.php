@@ -77,6 +77,7 @@ class Info extends BaseController {
 	}
 
 	public function addLink() {
+		if(!Auth::check()) {return;}
 		$basic = BookBasic::find(Input::get('id'));
 		if(count($basic)==0) return Redirect::to('error')->with('message', '链接添加失败');
 		$link = Auth::user()->id . '<&>' . Input::get('title') . '<&>' . Input::get('url') . '<<&&>>';

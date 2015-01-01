@@ -6,7 +6,9 @@ class Personal extends BaseController {
 	{
 		if(Auth::check()) {
 			$list = array();
-			$rec_list = BookRecommend::where('user_id', '=', Auth::user()->id)->paginate(10);
+			$rec_list = BookRecommend::where('user_id', '=', Auth::user()->id)
+				->where('status', '!=', '已入库')
+				->orderBy('id', 'desc')->paginate(10);
 			foreach ($rec_list as $rec) {
 				$basic = BookBasic::find($rec->book_kind);
 

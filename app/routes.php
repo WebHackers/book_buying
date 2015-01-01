@@ -31,6 +31,8 @@ Route::post('/favour', 'index@favour');
 
 Route::get('/history', 'history@index');
 
+Route::get('/{history}/search', 'search@handle');
+
 /**
  *|--------------------------------------------------------------------------
  *|	Message

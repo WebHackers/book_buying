@@ -16,7 +16,6 @@ class CreateBookMessageTable extends Migration {
 		{
 			$table->increments('id'); 
 			$table->timestamps();
-			//$table->integer('book_id');
 			$table->integer('book_kind');
 			$table->integer('user_id');
 			$table->string('user_message');

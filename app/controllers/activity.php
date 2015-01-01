@@ -28,8 +28,10 @@ class Activity extends BaseController {
 		if(Auth::check()&&Auth::user()->user_rank=='购书管理') {
 			if(!is_numeric(Input::get('budget')))
 				return Redirect::back()->with('message','预算不能是非数字！');
+
 			if(Input::get('deadline')=='')
 				return Redirect::back()->with('message','截止时间不能为空！');
+
 			$act = BookActivity::where('act_status','=','已开启')->get();
 			if(count($act)==0) {
 				$act = new BookActivity;
@@ -53,13 +55,34 @@ class Activity extends BaseController {
 	public function finish()
 	{
 		if(Auth::check()&&Auth::user()->user_rank=='购书管理') {
-			if(BookActivity::where('act_status','=','已开启')->count()==0)
+			$activity = BookActivity::where('act_status','=','已开启')->get();
+			if(count($activity)==0)
 				return Redirect::back()->with('message','没有开启的购书活动！');
+
 			if(!is_numeric(Input::get('cost')))
 				return Redirect::back()->with('message','总花费不能是非数字！');
-			/*$rec = BookRecommend::where('status', '=', '已购买')
-				->update(array('status' => '已入库');*/
-			return Input::get('cost');
+
+			$act = $activity[0];
+			$books = BookRecommend::where('status', '=', '已购买')->get();
+			if(count($books)==0)
+				return Redirect::back()->with('message','还没有购买书籍呦');
+			foreach ($books as $book) {
+				$listItem = new BookList;
+				$listItem->book_kind 		= $book->book_kind;
+				$listItem->book_time 		= date("Y-m-d");
+				$listItem->book_status 	= '未被借';
+				$listItem->act_id 			= $act->id;
+				$listItem->save();
+
+				$book->status = '已入库';
+				$book->save();
+			}
+
+			$act->act_status = '已结束';
+			$act->act_cost = Input::get('cost');
+			$act->save();
+
+			return Redirect::to('activity');
 		}
 	}
 
